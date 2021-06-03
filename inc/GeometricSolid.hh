@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Vector3D.hh"
 #include "Matrix3x3.hh"
+#include "SceneObject.hh"
 
 
 /*!
@@ -21,7 +22,7 @@
  *  wzorcowymi brylami oraz docelowym miejscem skladowania
  *  bryl. Wektor jest uzywany do slkalowania bryl.
  */
-class Solid{
+class Solid: public SceneObject{
 
     private:
         /*!
@@ -61,6 +62,8 @@ class Solid{
         *   \brief Metoda skalujaca wektor
         */
         Vector3D Scale(const Vector3D& Vertex) const;
+
+        virtual const char* Type() const override {return "Solid";};
 
 };
 

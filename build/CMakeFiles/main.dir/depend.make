@@ -8,6 +8,7 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/Matrix.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Matrix3x3.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Prism6.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Scene.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/SceneObject.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Vector.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/example.h

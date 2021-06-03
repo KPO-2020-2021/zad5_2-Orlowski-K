@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Cuboid.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/Cuboid.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Drone.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/Drone.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/GeometricSolid.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/GeometricSolid.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Matrix3x3.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/Matrix3x3.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Prism6.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/Prism6.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Scene.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/Scene.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Vector3D.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/Vector3D.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/example.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/example.cpp.o"
-  "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/lacze_do_gnuplota.cpp" "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Cuboid.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Cuboid.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Drone.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Drone.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/GeometricSolid.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/GeometricSolid.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Matrix3x3.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Matrix3x3.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Prism6.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Prism6.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Scene.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Vector3D.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Vector3D.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/example.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/example.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/lacze_do_gnuplota.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

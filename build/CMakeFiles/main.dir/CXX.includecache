@@ -11,6 +11,8 @@ GeometricSolid.hh
 ../inc/GeometricSolid.hh
 
 ../inc/Drone.hh
+SceneObject.hh
+../inc/SceneObject.hh
 Prism6.hh
 ../inc/Prism6.hh
 Cuboid.hh
@@ -33,6 +35,8 @@ Vector3D.hh
 ../inc/Vector3D.hh
 Matrix3x3.hh
 ../inc/Matrix3x3.hh
+SceneObject.hh
+../inc/SceneObject.hh
 
 ../inc/Matrix.hh
 iostream
@@ -53,6 +57,8 @@ GeometricSolid.hh
 ../inc/Scene.hh
 Drone.hh
 ../inc/Drone.hh
+
+../inc/SceneObject.hh
 
 ../inc/Vector.hh
 iostream
@@ -82,9 +88,9 @@ list
 vector
 -
 
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/main.cpp
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/main.cpp
 ../tests/doctest/doctest.h
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/doctest/doctest.h
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/doctest/doctest.h
 iostream
 -
 iomanip
@@ -96,21 +102,21 @@ fstream
 string
 -
 exampleConfig.h
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/exampleConfig.h
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/exampleConfig.h
 example.h
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/example.h
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/example.h
 Vector3D.hh
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/Vector3D.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Vector3D.hh
 Matrix3x3.hh
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/Matrix3x3.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Matrix3x3.hh
 Drone.hh
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/Drone.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Drone.hh
 Scene.hh
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/Scene.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Scene.hh
 ../inc/lacze_do_gnuplota.hh
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc/lacze_do_gnuplota.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc/lacze_do_gnuplota.hh
 
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc/lacze_do_gnuplota.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc/lacze_do_gnuplota.hh
 string
 -
 list
@@ -118,7 +124,7 @@ list
 vector
 -
 
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/doctest/doctest.h
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/doctest/doctest.h
 signal.h
 -
 iosfwd
@@ -132,7 +138,7 @@ ciso646
 type_traits
 -
 doctest_fwd.h
-/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/doctest/doctest_fwd.h
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/doctest/doctest_fwd.h
 ctime
 -
 cmath

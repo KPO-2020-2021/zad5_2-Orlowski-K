@@ -1,5 +1,6 @@
 #pragma once
 
+#include "SceneObject.hh"
 #include "Prism6.hh"
 #include "Cuboid.hh"
 #include "lacze_do_gnuplota.hh"
@@ -33,7 +34,7 @@
  *  polozenie calego drona w ukladzie globalnym. Przechowuje
  *  tez numer utworzonego drona.
  */
-class Drone{
+class Drone: public SceneObject{
 
     private:
         /*!
@@ -119,6 +120,9 @@ class Drone{
         *   \brief Operator indeksujacy udostepniajaca wybrany rotor
         */
         const Prism& operator [] (unsigned int Ind) const;
+
+
+        virtual const char* Type() const override {return "Drone";};
 
 
 

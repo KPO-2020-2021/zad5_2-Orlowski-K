@@ -1,62 +1,62 @@
 [
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/main.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/main.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/main.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/main.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/example.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/example.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/example.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/example.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/example.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/example.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/lacze_do_gnuplota.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/lacze_do_gnuplota.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/lacze_do_gnuplota.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/lacze_do_gnuplota.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Cuboid.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Cuboid.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Cuboid.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Cuboid.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Cuboid.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Cuboid.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/GeometricSolid.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/GeometricSolid.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/GeometricSolid.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/GeometricSolid.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/GeometricSolid.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/GeometricSolid.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Matrix3x3.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Matrix3x3.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Matrix3x3.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Matrix3x3.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Matrix3x3.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Matrix3x3.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Vector3D.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Vector3D.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Vector3D.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Vector3D.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Vector3D.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Vector3D.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Prism6.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Prism6.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Prism6.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Prism6.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Prism6.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Prism6.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Drone.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Drone.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Drone.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Drone.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Drone.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Drone.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Scene.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Scene.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/src/Scene.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Scene.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/tests",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/main.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/main.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/main.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/main.cpp"
 },
 {
-  "directory": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/tests",
-  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/dummy.cpp",
-  "file": "/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/dummy.cpp"
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/dummy.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/dummy.cpp"
 }
 ]

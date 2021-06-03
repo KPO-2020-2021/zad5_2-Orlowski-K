@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K
+CMAKE_SOURCE_DIR = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build
+CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build
 
 # Utility rule file for doc.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[1;35mGenerating API documentation with Doxygen (open ./html/index.html to view)."
-	/usr/bin/doxygen /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/Doxyfile &> doxygen.log
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[1;35mGenerating API documentation with Doxygen (open ./html/index.html to view)."
+	/usr/bin/doxygen /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/Doxyfile &> doxygen.log
 
 doc: CMakeFiles/doc
 doc: CMakeFiles/doc.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc.dir/depend
 

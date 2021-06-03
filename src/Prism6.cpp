@@ -53,3 +53,4 @@ Vector3D Prism::TranformToParentialCoordinate(const Vector3D& Vertex) const{
 void Prism::Rotate(double angle){
     OrientAngle += angle;
 }
+

@@ -62,5 +62,5 @@ class Prism: public Solid{
         */
         double Take_OrientAngle() const {return OrientAngle;}; 
 
-
+        virtual const char* Type() const override {return "Prism";};
 };

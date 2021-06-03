@@ -9,11 +9,12 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Matrix3x3.hh
  ../inc/Prism6.hh
  ../inc/Scene.hh
+ ../inc/SceneObject.hh
  ../inc/Vector.hh
  ../inc/Vector3D.hh
  ../inc/example.h
  ../inc/lacze_do_gnuplota.hh
- /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/app/main.cpp
- /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc/lacze_do_gnuplota.hh
- /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests/doctest/doctest.h
+ /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/main.cpp
+ /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc/lacze_do_gnuplota.hh
+ /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/doctest/doctest.h
  exampleConfig.h

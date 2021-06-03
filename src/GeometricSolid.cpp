@@ -37,3 +37,5 @@ Solid::Solid(std::string FirstFile,std::string SecFile, const Vector3D &V_scale)
     Filename_FinalSolid = SecFile;
     scale = V_scale;
 }
+
+

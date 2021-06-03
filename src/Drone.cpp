@@ -410,4 +410,3 @@ double Drone::TakeOrient() const{
 
 
 
-

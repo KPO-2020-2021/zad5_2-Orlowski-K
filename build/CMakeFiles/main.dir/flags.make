@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17
 
 CXX_DEFINES = -DENABLE_DOCTEST_IN_LIBRARY
 
-CXX_INCLUDES = -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/external/doctest/doctest 
+CXX_INCLUDES = -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest 
 

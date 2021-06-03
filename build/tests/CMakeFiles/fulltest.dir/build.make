@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K
+CMAKE_SOURCE_DIR = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build
+CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build
 
 # Utility rule file for fulltest.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build
 include tests/CMakeFiles/fulltest.dir/progress.make
 
 tests/CMakeFiles/fulltest:
-	cd /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/tests && /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/unit_tests -s
+	cd /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests && /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/unit_tests -s
 
 fulltest: tests/CMakeFiles/fulltest
 fulltest: tests/CMakeFiles/fulltest.dir/build.make
@@ -67,10 +67,10 @@ tests/CMakeFiles/fulltest.dir/build: fulltest
 .PHONY : tests/CMakeFiles/fulltest.dir/build
 
 tests/CMakeFiles/fulltest.dir/clean:
-	cd /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/fulltest.dir/cmake_clean.cmake
+	cd /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/fulltest.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/fulltest.dir/clean
 
 tests/CMakeFiles/fulltest.dir/depend:
-	cd /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/tests /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/tests/CMakeFiles/fulltest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests/CMakeFiles/fulltest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/fulltest.dir/depend
 

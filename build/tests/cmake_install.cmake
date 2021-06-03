@@ -1,4 +1,4 @@
-# Install script for directory: /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/tests
+# Install script for directory: /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

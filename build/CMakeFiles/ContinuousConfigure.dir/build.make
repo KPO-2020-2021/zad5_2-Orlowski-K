@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K
+CMAKE_SOURCE_DIR = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build
+CMAKE_BINARY_DIR = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build
 
 # Utility rule file for ContinuousConfigure.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 .PHONY : CMakeFiles/ContinuousConfigure.dir/clean
 
 CMakeFiles/ContinuousConfigure.dir/depend:
-	cd /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/build/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousConfigure.dir/depend
 

@@ -6,6 +6,7 @@
 #include "Matrix3x3.hh"
 #include "Drone.hh"
 #include "Scene.hh"
+#include "SceneObject.hh"
 // This is all that is needed to compile a test-runner executable.
 // More tests can be added here, or in a new tests/*.cpp file.
 
@@ -346,8 +347,36 @@ TEST_CASE("Zmiana orientacji graniastoslupa w ukladzie lokalnym (obrot wokol wla
 }
 
 
+TEST_CASE("Test metod wirtualnych dla SceneObject"){
+    SceneObject test;
+
+    CHECK( test.Type() == "SceneObject");
+}
 
 
+TEST_CASE("Test metod wirtualnych dla Solid"){
+    Solid test;
+
+    CHECK( test.Type() == "Solid");
+}
+
+TEST_CASE("Test metod wirtualnych dla Prism"){
+    Prism test;
+
+    CHECK( test.Type() == "Prism");
+}
+
+TEST_CASE("Test metod wirtualnych dla Cuboid"){
+    Cuboid test;
+
+    CHECK( test.Type() == "Cuboid");
+}
+
+TEST_CASE("Test metod wirtualnych dla Drone"){
+    Drone test;
+
+    CHECK( test.Type() == "Drone");
+}
 
 
 

@@ -5,6 +5,7 @@ CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/Cuboid.hh
 CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/GeometricSolid.hh
 CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/Matrix.hh
 CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/Matrix3x3.hh
+CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/SceneObject.hh
 CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/Cuboid.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/Cuboid.cpp.o: ../src/Cuboid.cpp
@@ -15,6 +16,7 @@ CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/GeometricSolid.hh
 CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/Matrix.hh
 CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/Matrix3x3.hh
 CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/Prism6.hh
+CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/SceneObject.hh
 CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/Drone.cpp.o: ../inc/lacze_do_gnuplota.hh
@@ -23,6 +25,7 @@ CMakeFiles/program.dir/src/Drone.cpp.o: ../src/Drone.cpp
 CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../inc/GeometricSolid.hh
 CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../inc/Matrix.hh
 CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../inc/Matrix3x3.hh
+CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../inc/SceneObject.hh
 CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/GeometricSolid.cpp.o: ../src/GeometricSolid.cpp
@@ -36,6 +39,7 @@ CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/GeometricSolid.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Matrix.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Matrix3x3.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Prism6.hh
+CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/SceneObject.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../src/Prism6.cpp
@@ -47,6 +51,7 @@ CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Matrix.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Matrix3x3.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Prism6.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Scene.hh
+CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/SceneObject.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/lacze_do_gnuplota.hh
