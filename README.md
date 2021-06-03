@@ -1,3 +1,32 @@
+## Faza 1
+
+Program poprawnie rysuje scene i drony.
+
+Wykonanie obiektowe z dziedziczeniem.
+
+Animacja lotu jednego z dronow.
+Mozliwy lot po oktagonie (modyfikacja).
+Program zlicza uzywane i usuwane wektory.
+Pliki tekstowe wzorcowe i robocze znajduja sie w katalogu datasets w odpowiedznich lokalizacjach.
+
+Kazdy dron jest opisany 12 wektorami (polozenie w ukladach lokalnych i globalnych bryl i drona, wektor skalowania w klasie bazowej).
+
+## Uruchamianie programu i testy
+W celu uruchomienia programu nalezy wejsc w katalog build i uruchomimc program ./main
+W tym samym katalogu polecenie make kompiluje program.
+
+Testy mozna przeprowadzic za pomoca polecen:
+-make test	 (Testy ogolne)
+./unit_tests -s (Testy jednostkowe)
+
+
+## Dokumentacja
+Dokumentacja wygenerowana przy pomocy Doxygen'a znajduje sie w katalogu /Documentation.
+W katalogu znajduje sie skrot do strony HTML o nazwie index.html
+W celu otworzenia dokumentacji nalezy uruchomic skrot lub przeszukac katalog /html.
+
+W razie problemow pliki graficzne diagramow znajduja sie w folderze images.
+Pliki z diagramami w programie Dia znajduja sie w /Documentation/dia/.
 
 ## Building
 
