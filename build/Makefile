@@ -725,6 +725,33 @@ src/Peak.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Peak.cpp.s
 .PHONY : src/Peak.cpp.s
 
+src/Plateau.o: src/Plateau.cpp.o
+
+.PHONY : src/Plateau.o
+
+# target to build an object file
+src/Plateau.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Plateau.cpp.o
+.PHONY : src/Plateau.cpp.o
+
+src/Plateau.i: src/Plateau.cpp.i
+
+.PHONY : src/Plateau.i
+
+# target to preprocess a source file
+src/Plateau.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Plateau.cpp.i
+.PHONY : src/Plateau.cpp.i
+
+src/Plateau.s: src/Plateau.cpp.s
+
+.PHONY : src/Plateau.s
+
+# target to generate assembly for a file
+src/Plateau.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Plateau.cpp.s
+.PHONY : src/Plateau.cpp.s
+
 src/Prism6.o: src/Prism6.cpp.o
 
 .PHONY : src/Prism6.o
@@ -948,6 +975,9 @@ help:
 	@echo "... src/Peak.o"
 	@echo "... src/Peak.i"
 	@echo "... src/Peak.s"
+	@echo "... src/Plateau.o"
+	@echo "... src/Plateau.i"
+	@echo "... src/Plateau.s"
 	@echo "... src/Prism6.o"
 	@echo "... src/Prism6.i"
 	@echo "... src/Prism6.s"

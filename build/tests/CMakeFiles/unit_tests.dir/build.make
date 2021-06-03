@@ -100,7 +100,8 @@ unit_tests_EXTERNAL_OBJECTS = \
 "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Drone.cpp.o" \
 "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Scene.cpp.o" \
 "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Peak.cpp.o" \
-"/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Slope.cpp.o"
+"/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Slope.cpp.o" \
+"/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Plateau.cpp.o"
 
 unit_tests: tests/CMakeFiles/unit_tests.dir/main.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/dummy.cpp.o
@@ -115,6 +116,7 @@ unit_tests: CMakeFiles/program.dir/src/Drone.cpp.o
 unit_tests: CMakeFiles/program.dir/src/Scene.cpp.o
 unit_tests: CMakeFiles/program.dir/src/Peak.cpp.o
 unit_tests: CMakeFiles/program.dir/src/Slope.cpp.o
+unit_tests: CMakeFiles/program.dir/src/Plateau.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../unit_tests"

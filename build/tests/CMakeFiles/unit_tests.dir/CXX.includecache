@@ -59,6 +59,8 @@ fstream
 ../inc/Plateau.hh
 Cuboid.hh
 ../inc/Cuboid.hh
+fstream
+-
 
 ../inc/Prism6.hh
 GeometricSolid.hh

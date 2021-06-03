@@ -32,13 +32,14 @@
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0;
-    Vector3D Layout1 = {30,30,0}, Layout2 = {130,130,0}, Layout_Obs = {30,110,0};
+    Vector3D Layout1 = {30,30,0}, Layout2 = {130,130,0};
     double   Orient1 = 0, Orient2 = 25, Angle = 0;
     double   FlightLen;
     Drone FirstDrone, SecondDrone;
 
-    std::shared_ptr<Peak>  FirstPeak(new Peak("../datasets/templates/obstacle.dat","../datasets/dat/Peak1.dat",{20,20,60},Layout_Obs,0) );
+    std::shared_ptr<Peak>  FirstPeak(new Peak("../datasets/templates/obstacle.dat","../datasets/dat/Peak1.dat",{20,20,60},{120,30,0},0) );
     std::shared_ptr<Slope> FirstSlope(new Slope("../datasets/templates/obstacle.dat","../datasets/dat/Slope1.dat",{20,80,60},{60,90,0},0) );
+    std::shared_ptr<Plateau> FirstPlateau(new Plateau("../datasets/templates/obstacle.dat","../datasets/dat/Plateau1.dat",{50,60,15},{105,105,0},0) );
 
     std::vector<Vector3D> TracePoints;
     std::vector<Drone*>    Drones;
@@ -54,12 +55,14 @@ int main() {
 
     FirstPeak->Count_Save_GlobalCoor();
     FirstSlope->Count_Save_GlobalCoor();
+    FirstPlateau->Count_Save_GlobalCoor();
 
     Scene.CreateSurface();
     Scene.AddDrone(FirstDrone);
     Scene.AddDrone(SecondDrone);
     Scene.AddObject(FirstPeak);
     Scene.AddObject(FirstSlope);
+    Scene.AddObject(FirstPlateau);
 
     Link.ZmienTrybRys(PzG::TR_3D);
     Link.Inicjalizuj();
