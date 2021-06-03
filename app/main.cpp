@@ -26,41 +26,47 @@
 #include "../inc/lacze_do_gnuplota.hh"
 
 #define SURFACE "../datasets/templates/surface.dat"
+#define FILE_OBSTACLE "../datasets/templates/obstacle.dat"
 #define FLIGHTHEIHGT 80
 
 
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0;
-    Vector3D Layout1 = {30,30,0}, Layout2 = {130,130,0};
+    Vector3D Layout1 = {30,30,0}, Layout2 = {160,100,0};
     double   Orient1 = 0, Orient2 = 25, Angle = 0;
     double   FlightLen;
-    Drone FirstDrone, SecondDrone;
 
-    std::shared_ptr<Peak>  FirstPeak(new Peak("../datasets/templates/obstacle.dat","../datasets/dat/Peak1.dat",{20,20,60},{120,30,0},0) );
-    std::shared_ptr<Slope> FirstSlope(new Slope("../datasets/templates/obstacle.dat","../datasets/dat/Slope1.dat",{20,80,60},{60,90,0},0) );
-    std::shared_ptr<Plateau> FirstPlateau(new Plateau("../datasets/templates/obstacle.dat","../datasets/dat/Plateau1.dat",{50,60,15},{105,105,0},0) );
+    std::shared_ptr<Drone> FirstDrone(new Drone()), SecondDrone(new Drone());
+    std::shared_ptr<Peak>  FirstPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak1.dat",{20,20,60},{120,30,0},0) );
+    std::shared_ptr<Peak>  SecondPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak2.dat",{40,40,50},{35,150,0},0) );
+    std::shared_ptr<Slope> FirstSlope(new Slope(FILE_OBSTACLE,"../datasets/dat/Slope1.dat",{20,80,60},{60,90,0},0) );
+    std::shared_ptr<Plateau> FirstPlateau(new Plateau(FILE_OBSTACLE,"../datasets/dat/Plateau1.dat",{50,60,15},{105,105,0},0) );
 
-    std::vector<Vector3D> TracePoints;
-    std::vector<Drone*>    Drones;
+    std::vector<Vector3D>                   TracePoints;
+    std::vector<std::shared_ptr<Drone>>     Drones;
     std::list<std::shared_ptr<SceneObject>> Objects;
+
     Scene Scene(Drones,Objects,SURFACE,Link);
     char option[1] = {'m'};
 
-    FirstDrone.MakeDrone(Layout1,Orient1,number_of_drones);
-    FirstDrone.Count_Save_GlobalCoor();
+    FirstDrone->MakeDrone(Layout1,Orient1,number_of_drones);
+    FirstDrone->Count_Save_GlobalCoor();
 
-    SecondDrone.MakeDrone(Layout2,Orient2,number_of_drones);
-    SecondDrone.Count_Save_GlobalCoor();
+    SecondDrone->MakeDrone(Layout2,Orient2,number_of_drones);
+    SecondDrone->Count_Save_GlobalCoor();
 
     FirstPeak->Count_Save_GlobalCoor();
+    SecondPeak->Count_Save_GlobalCoor();
     FirstSlope->Count_Save_GlobalCoor();
     FirstPlateau->Count_Save_GlobalCoor();
 
+
     Scene.CreateSurface();
-    Scene.AddDrone(FirstDrone);
-    Scene.AddDrone(SecondDrone);
+    Scene.AddObject(FirstDrone);
+    Scene.AddObject(SecondDrone);
     Scene.AddObject(FirstPeak);
+    Scene.AddObject(SecondPeak);
     Scene.AddObject(FirstSlope);
     Scene.AddObject(FirstPlateau);
 

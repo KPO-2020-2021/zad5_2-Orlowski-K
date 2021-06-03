@@ -15,7 +15,7 @@ Scene::Scene(){
  *   \param [in]  Link_2             - lacze do modulu z programem GNUPlot
  *   \retval  Tworzy obiekt klasy Scene z polami wypelnionymi przez podane wartosci
  */
-Scene::Scene(std::vector<Drone*> &DroneContener,std::list<std::shared_ptr<SceneObject>> &ObjectList,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 ){
+Scene::Scene(std::vector<std::shared_ptr<Drone>> &DroneContener,std::list<std::shared_ptr<SceneObject>> &ObjectList,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 ){
     Drones = DroneContener;
     Objects = ObjectList;
     Filename_Surface = Filename;
@@ -30,15 +30,15 @@ Scene::Scene(std::vector<Drone*> &DroneContener,std::list<std::shared_ptr<SceneO
  *   \param [in] NewDrone - dodawnay dron 
  *   \retval  Dodanie zadanego drona do pola konteneru w scenie
  */
-void Scene::AddDrone(Drone &NewDrone){
-    Drones.push_back(&NewDrone);
+void Scene::AddDrone(std::shared_ptr<Drone> NewDrone){
+    Drones.push_back(NewDrone);
     std::string Filename;
 
-    Filename = NewDrone.TakeFilename_Body();
+    Filename = NewDrone->TakeFilename_Body();
     
     Link.DodajNazwePliku( Filename.c_str() );
     for(unsigned int Ind = 0; Ind < 4 ; ++Ind){
-        Filename = NewDrone.TakeFilename_Rotor(NewDrone[Ind]);
+        Filename = NewDrone->TakeFilename_Rotor((*NewDrone)[Ind]);
         Link.DodajNazwePliku(Filename.c_str());
     }
 
@@ -97,7 +97,7 @@ void Scene::SwitchActiveDrone(){
  *   \brief Metoda Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji
  *   \retval Dron z kontenera wskazywany przez parametr Actve
  */
-Drone* Scene::UseActiveDrone(){
+std::shared_ptr<Drone> Scene::UseActiveDrone(){
     return Drones.at(Active);
 }
 
@@ -105,7 +105,7 @@ Drone* Scene::UseActiveDrone(){
  *   \brief Metoda Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu
  *   \retval Dron z kontenera wskazywany przez parametr Actve
  */
-const Drone* Scene::TakeActiveDrone() const{
+const std::shared_ptr<Drone> Scene::TakeActiveDrone() const{
     return Drones.at(Active);
 }
 
@@ -119,4 +119,8 @@ void Scene::AddObject(std::shared_ptr<SceneObject> NewObject){
         Filename = NewObject->TakeFilename_FinalSolid();
         Link.DodajNazwePliku( Filename.c_str() );
     }
+    else{
+        this->AddDrone(std::dynamic_pointer_cast<Drone>(NewObject));
+    }
+
 }
