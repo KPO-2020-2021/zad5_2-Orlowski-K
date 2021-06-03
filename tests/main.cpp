@@ -7,6 +7,9 @@
 #include "Drone.hh"
 #include "Scene.hh"
 #include "SceneObject.hh"
+#include "Peak.hh"
+#include "Slope.hh"
+#include "Plateau.hh"
 // This is all that is needed to compile a test-runner executable.
 // More tests can be added here, or in a new tests/*.cpp file.
 
@@ -378,7 +381,22 @@ TEST_CASE("Test metod wirtualnych dla Drone"){
     CHECK( test.Type() == "Drone");
 }
 
+TEST_CASE("Test metod wirtualnych dla Peak"){
+    Peak test;
 
+    CHECK( test.Type() == "Peak");
+}
 
+TEST_CASE("Test metod wirtualnych dla Slope"){
+    Slope test;
+
+    CHECK( test.Type() == "Slope");
+}
+
+TEST_CASE("Test metod wirtualnych dla Plateau"){
+    Plateau test;
+
+    CHECK( test.Type() == "Plateau");
+}
 
 

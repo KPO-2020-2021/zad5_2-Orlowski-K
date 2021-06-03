@@ -50,6 +50,14 @@ iostream
 Matrix.hh
 ../inc/Matrix.hh
 
+../inc/Peak.hh
+Cuboid.hh
+../inc/Cuboid.hh
+
+../inc/Plateau.hh
+Cuboid.hh
+../inc/Cuboid.hh
+
 ../inc/Prism6.hh
 GeometricSolid.hh
 ../inc/GeometricSolid.hh
@@ -59,6 +67,10 @@ Drone.hh
 ../inc/Drone.hh
 
 ../inc/SceneObject.hh
+
+../inc/Slope.hh
+Cuboid.hh
+../inc/Cuboid.hh
 
 ../inc/Vector.hh
 iostream
@@ -187,4 +199,10 @@ Scene.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/Scene.hh
 SceneObject.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/SceneObject.hh
+Peak.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/Peak.hh
+Slope.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/Slope.hh
+Plateau.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/Plateau.hh
 
