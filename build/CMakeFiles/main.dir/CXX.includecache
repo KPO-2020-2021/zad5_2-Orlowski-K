@@ -50,6 +50,16 @@ iostream
 Matrix.hh
 ../inc/Matrix.hh
 
+../inc/Peak.hh
+Cuboid.hh
+../inc/Cuboid.hh
+fstream
+-
+
+../inc/Plateau.hh
+Cuboid.hh
+../inc/Cuboid.hh
+
 ../inc/Prism6.hh
 GeometricSolid.hh
 ../inc/GeometricSolid.hh
@@ -57,8 +67,16 @@ GeometricSolid.hh
 ../inc/Scene.hh
 Drone.hh
 ../inc/Drone.hh
+SceneObject.hh
+../inc/SceneObject.hh
 
 ../inc/SceneObject.hh
+memory
+-
+
+../inc/Slope.hh
+Cuboid.hh
+../inc/Cuboid.hh
 
 ../inc/Vector.hh
 iostream
@@ -101,6 +119,8 @@ fstream
 -
 string
 -
+memory
+-
 exampleConfig.h
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/exampleConfig.h
 example.h
@@ -113,6 +133,14 @@ Drone.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Drone.hh
 Scene.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Scene.hh
+SceneObject.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/SceneObject.hh
+Peak.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Peak.hh
+Slope.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Slope.hh
+Plateau.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/app/Plateau.hh
 ../inc/lacze_do_gnuplota.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc/lacze_do_gnuplota.hh
 

@@ -15,8 +15,9 @@ Scene::Scene(){
  *   \param [in]  Link_2             - lacze do modulu z programem GNUPlot
  *   \retval  Tworzy obiekt klasy Scene z polami wypelnionymi przez podane wartosci
  */
-Scene::Scene(std::vector<Drone*> &DroneContener,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 ){
+Scene::Scene(std::vector<Drone*> &DroneContener,std::list<std::shared_ptr<SceneObject>> &ObjectList,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 ){
     Drones = DroneContener;
+    Objects = ObjectList;
     Filename_Surface = Filename;
     Link = Link_2;
     Active = 0;
@@ -106,4 +107,16 @@ Drone* Scene::UseActiveDrone(){
  */
 const Drone* Scene::TakeActiveDrone() const{
     return Drones.at(Active);
+}
+
+
+
+void Scene::AddObject(std::shared_ptr<SceneObject> NewObject){
+    Objects.push_back(NewObject);
+
+    if(NewObject->ObjectType() != "Drone"){
+        std::string Filename;
+        Filename = NewObject->TakeFilename_FinalSolid();
+        Link.DodajNazwePliku( Filename.c_str() );
+    }
 }

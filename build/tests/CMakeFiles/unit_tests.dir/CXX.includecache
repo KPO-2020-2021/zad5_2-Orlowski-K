@@ -53,6 +53,8 @@ Matrix.hh
 ../inc/Peak.hh
 Cuboid.hh
 ../inc/Cuboid.hh
+fstream
+-
 
 ../inc/Plateau.hh
 Cuboid.hh
@@ -65,8 +67,12 @@ GeometricSolid.hh
 ../inc/Scene.hh
 Drone.hh
 ../inc/Drone.hh
+SceneObject.hh
+../inc/SceneObject.hh
 
 ../inc/SceneObject.hh
+memory
+-
 
 ../inc/Slope.hh
 Cuboid.hh

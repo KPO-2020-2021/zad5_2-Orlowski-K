@@ -350,53 +350,46 @@ TEST_CASE("Zmiana orientacji graniastoslupa w ukladzie lokalnym (obrot wokol wla
 }
 
 
-TEST_CASE("Test metod wirtualnych dla SceneObject"){
-    SceneObject test;
-
-    CHECK( test.Type() == "SceneObject");
-}
-
-
 TEST_CASE("Test metod wirtualnych dla Solid"){
     Solid test;
 
-    CHECK( test.Type() == "Solid");
+    CHECK( test.ObjectType() == "Solid");
 }
 
 TEST_CASE("Test metod wirtualnych dla Prism"){
     Prism test;
 
-    CHECK( test.Type() == "Prism");
+    CHECK( test.ObjectType() == "Prism");
 }
 
 TEST_CASE("Test metod wirtualnych dla Cuboid"){
     Cuboid test;
 
-    CHECK( test.Type() == "Cuboid");
+    CHECK( test.ObjectType() == "Cuboid");
 }
 
 TEST_CASE("Test metod wirtualnych dla Drone"){
     Drone test;
 
-    CHECK( test.Type() == "Drone");
+    CHECK( test.ObjectType() == "Drone");
 }
 
 TEST_CASE("Test metod wirtualnych dla Peak"){
     Peak test;
 
-    CHECK( test.Type() == "Peak");
+    CHECK( test.ObjectType() == "Peak");
 }
 
 TEST_CASE("Test metod wirtualnych dla Slope"){
     Slope test;
 
-    CHECK( test.Type() == "Slope");
+    CHECK( test.ObjectType() == "Slope");
 }
 
 TEST_CASE("Test metod wirtualnych dla Plateau"){
     Plateau test;
 
-    CHECK( test.Type() == "Plateau");
+    CHECK( test.ObjectType() == "Plateau");
 }
 
 

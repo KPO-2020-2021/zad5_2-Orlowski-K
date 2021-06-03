@@ -408,5 +408,8 @@ double Drone::TakeOrient() const{
 
 
 
+const std::string& Drone::TakeFilename_FinalSolid() const{
+  return Body.TakeFilename_FinalSolid();
+}
 
 

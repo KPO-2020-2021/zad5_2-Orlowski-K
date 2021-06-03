@@ -698,6 +698,33 @@ src/Matrix3x3.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Matrix3x3.cpp.s
 .PHONY : src/Matrix3x3.cpp.s
 
+src/Peak.o: src/Peak.cpp.o
+
+.PHONY : src/Peak.o
+
+# target to build an object file
+src/Peak.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Peak.cpp.o
+.PHONY : src/Peak.cpp.o
+
+src/Peak.i: src/Peak.cpp.i
+
+.PHONY : src/Peak.i
+
+# target to preprocess a source file
+src/Peak.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Peak.cpp.i
+.PHONY : src/Peak.cpp.i
+
+src/Peak.s: src/Peak.cpp.s
+
+.PHONY : src/Peak.s
+
+# target to generate assembly for a file
+src/Peak.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Peak.cpp.s
+.PHONY : src/Peak.cpp.s
+
 src/Prism6.o: src/Prism6.cpp.o
 
 .PHONY : src/Prism6.o
@@ -891,6 +918,9 @@ help:
 	@echo "... src/Matrix3x3.o"
 	@echo "... src/Matrix3x3.i"
 	@echo "... src/Matrix3x3.s"
+	@echo "... src/Peak.o"
+	@echo "... src/Peak.i"
+	@echo "... src/Peak.s"
 	@echo "... src/Prism6.o"
 	@echo "... src/Prism6.i"
 	@echo "... src/Prism6.s"

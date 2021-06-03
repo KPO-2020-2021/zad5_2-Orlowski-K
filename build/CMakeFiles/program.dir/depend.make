@@ -35,6 +35,16 @@ CMakeFiles/program.dir/src/Matrix3x3.cpp.o: ../inc/Matrix3x3.hh
 CMakeFiles/program.dir/src/Matrix3x3.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/Matrix3x3.cpp.o: ../src/Matrix3x3.cpp
 
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/Cuboid.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/GeometricSolid.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/Matrix.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/Matrix3x3.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/Peak.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/SceneObject.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/Vector.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../inc/Vector3D.hh
+CMakeFiles/program.dir/src/Peak.cpp.o: ../src/Peak.cpp
+
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/GeometricSolid.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Matrix.hh
 CMakeFiles/program.dir/src/Prism6.cpp.o: ../inc/Matrix3x3.hh

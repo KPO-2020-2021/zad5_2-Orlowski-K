@@ -8,5 +8,5 @@ class Plateau: public Cuboid{
 
     public:
 
-        virtual const char* Type() const override {return "Plateau";};
+        virtual const std::string ObjectType() const override {return "Plateau";};
 };

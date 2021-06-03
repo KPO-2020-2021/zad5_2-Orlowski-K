@@ -55,7 +55,7 @@ class Solid: public SceneObject{
         /*!
         *   \brief Metoda zwracajaca sciezke do pliku z docelowa bryla
         */
-        const std::string& TakeFilename_FinalSolid() const {return Filename_FinalSolid;};
+        virtual const std::string& TakeFilename_FinalSolid() const override{return Filename_FinalSolid;};
 
 
         /*!
@@ -63,7 +63,7 @@ class Solid: public SceneObject{
         */
         Vector3D Scale(const Vector3D& Vertex) const;
 
-        virtual const char* Type() const override {return "Solid";};
+        virtual const std::string ObjectType() const override {return "Solid";};
 
 };
 

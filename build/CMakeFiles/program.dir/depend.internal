@@ -35,6 +35,16 @@ CMakeFiles/program.dir/src/Matrix3x3.cpp.o
  ../inc/Matrix3x3.hh
  ../inc/Vector.hh
  /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Matrix3x3.cpp
+CMakeFiles/program.dir/src/Peak.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/GeometricSolid.hh
+ ../inc/Matrix.hh
+ ../inc/Matrix3x3.hh
+ ../inc/Peak.hh
+ ../inc/SceneObject.hh
+ ../inc/Vector.hh
+ ../inc/Vector3D.hh
+ /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp
 CMakeFiles/program.dir/src/Prism6.cpp.o
  ../inc/GeometricSolid.hh
  ../inc/Matrix.hh

@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <fstream>
 #include <string>
+#include <memory>
 
 #include "exampleConfig.h"
 #include "example.h"
@@ -18,6 +19,10 @@
 #include "Matrix3x3.hh"
 #include "Drone.hh"
 #include "Scene.hh"
+#include "SceneObject.hh"
+#include "Peak.hh"
+#include "Slope.hh"
+#include "Plateau.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
 #define SURFACE "../datasets/templates/surface.dat"
@@ -27,13 +32,15 @@
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0;
-    Vector3D Layout1 = {30,30,0}, Layout2 = {130,130,0};
+    Vector3D Layout1 = {30,30,0}, Layout2 = {130,130,0}, Layout_Obs = {30,110,0};
     double   Orient1 = 0, Orient2 = 25, Angle = 0;
     double   FlightLen;
     Drone FirstDrone, SecondDrone;
+    std::shared_ptr<Peak> FirstPeak(new Peak("../datasets/templates/obstacle.dat","../datasets/dat/Peak1.dat",{20,20,60},Layout_Obs,0) );
     std::vector<Vector3D> TracePoints;
     std::vector<Drone*>    Drones;
-    Scene Scene(Drones,SURFACE,Link);
+    std::list<std::shared_ptr<SceneObject>> Objects;
+    Scene Scene(Drones,Objects,SURFACE,Link);
     char option[1] = {'m'};
 
     FirstDrone.MakeDrone(Layout1,Orient1,number_of_drones);
@@ -42,9 +49,12 @@ int main() {
     SecondDrone.MakeDrone(Layout2,Orient2,number_of_drones);
     SecondDrone.Count_Save_GlobalCoor();
 
+    FirstPeak->Count_Save_GlobalCoor();
+
     Scene.CreateSurface();
     Scene.AddDrone(FirstDrone);
     Scene.AddDrone(SecondDrone);
+    Scene.AddObject(FirstPeak);
 
     Link.ZmienTrybRys(PzG::TR_3D);
     Link.Inicjalizuj();
@@ -175,10 +185,6 @@ int main() {
     }
     std::cout << "Koniec dzialania programu Dragonfly\n";
 
-
-
-
-    
 
 
 

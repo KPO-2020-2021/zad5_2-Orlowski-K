@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/program.dir/src/Drone.cpp.o"
   "CMakeFiles/program.dir/src/GeometricSolid.cpp.o"
   "CMakeFiles/program.dir/src/Matrix3x3.cpp.o"
+  "CMakeFiles/program.dir/src/Peak.cpp.o"
   "CMakeFiles/program.dir/src/Prism6.cpp.o"
   "CMakeFiles/program.dir/src/Scene.cpp.o"
   "CMakeFiles/program.dir/src/Vector3D.cpp.o"

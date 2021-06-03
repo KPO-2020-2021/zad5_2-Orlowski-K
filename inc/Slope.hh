@@ -7,5 +7,5 @@ class Slope: public Cuboid{
 
     public:
 
-        virtual const char* Type() const override {return "Slope";};
+        virtual const std::string ObjectType() const override {return "Slope";};
 };

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Drone.hh"
+#include "SceneObject.hh"
 
 /*!
  * \file
@@ -27,6 +28,9 @@ class Scene{
         *   \brief Kontener z dronami
         */
         std::vector<Drone*> Drones;
+
+
+        std::list<std::shared_ptr<SceneObject>> Objects;
         /*!
         *   \brief Sciezka do pliku z plaszczyzna
         */
@@ -45,7 +49,7 @@ class Scene{
         /*!
         *   \brief Konstruktor parametryczny sceny
         */
-        Scene(std::vector<Drone*> &DroneContener,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 );
+        Scene(std::vector<Drone*> &DroneContener,std::list<std::shared_ptr<SceneObject>> &ObjectList,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 );
         /*!
         *   \brief Metoda dodajaca drona do sceny
         */
@@ -70,5 +74,7 @@ class Scene{
         *   \brief Metoda pozwalajaca na dostep do sciezki do powierzchni w trybie tylko do odczytu
         */
         const std::string& TakeFilename_Surface() const { return Filename_Surface; };
+
+        void AddObject(std::shared_ptr<SceneObject> NewObject);
     
 };

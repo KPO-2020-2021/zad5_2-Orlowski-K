@@ -122,7 +122,10 @@ class Drone: public SceneObject{
         const Prism& operator [] (unsigned int Ind) const;
 
 
-        virtual const char* Type() const override {return "Drone";};
+        virtual const std::string ObjectType() const override {return "Drone";};
+
+
+        virtual const std::string& TakeFilename_FinalSolid() const override;
 
 
 

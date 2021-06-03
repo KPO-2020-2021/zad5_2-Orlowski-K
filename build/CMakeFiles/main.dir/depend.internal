@@ -7,9 +7,12 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/GeometricSolid.hh
  ../inc/Matrix.hh
  ../inc/Matrix3x3.hh
+ ../inc/Peak.hh
+ ../inc/Plateau.hh
  ../inc/Prism6.hh
  ../inc/Scene.hh
  ../inc/SceneObject.hh
+ ../inc/Slope.hh
  ../inc/Vector.hh
  ../inc/Vector3D.hh
  ../inc/example.h

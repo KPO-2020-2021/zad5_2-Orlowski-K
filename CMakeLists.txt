@@ -47,6 +47,7 @@ set(SOURCES          # All .cpp files in src/
     src/Prism6.cpp
     src/Drone.cpp
     src/Scene.cpp
+    src/Peak.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
