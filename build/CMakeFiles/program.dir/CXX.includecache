@@ -10,24 +10,6 @@
 GeometricSolid.hh
 ../inc/GeometricSolid.hh
 
-../inc/Drone.hh
-SceneObject.hh
-../inc/SceneObject.hh
-Prism6.hh
-../inc/Prism6.hh
-Cuboid.hh
-../inc/Cuboid.hh
-lacze_do_gnuplota.hh
-../inc/lacze_do_gnuplota.hh
-vector
--
-fstream
--
-iostream
--
-unistd.h
--
-
 ../inc/GeometricSolid.hh
 iostream
 -
@@ -50,15 +32,11 @@ iostream
 Matrix.hh
 ../inc/Matrix.hh
 
-../inc/Prism6.hh
-GeometricSolid.hh
-../inc/GeometricSolid.hh
-
-../inc/Scene.hh
-Drone.hh
-../inc/Drone.hh
-SceneObject.hh
-../inc/SceneObject.hh
+../inc/Peak.hh
+Cuboid.hh
+../inc/Cuboid.hh
+fstream
+-
 
 ../inc/SceneObject.hh
 memory
@@ -80,15 +58,7 @@ cassert
 Vector.hh
 ../inc/Vector.hh
 
-../inc/lacze_do_gnuplota.hh
-string
--
-list
--
-vector
--
-
-/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp
-Scene.hh
-/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp
+Peak.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.hh
 

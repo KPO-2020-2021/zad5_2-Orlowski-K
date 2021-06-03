@@ -1,25 +1,23 @@
 #include "Peak.hh"
 
 
-//static unsigned int number_of_peaks = 0;
-
 Peak::Peak():
     Cuboid(){
-       // ++number_of_peaks;
 }
+
 /*
 unsigned int Peak::TakeNumber() const{
-    return number_of_peaks;
+    unsigned int tmp = number_of_peaks;
+    return tmp;
 }
-*/
 
+*/
 Peak::~Peak(){
-    //--number_of_peaks;
 }
 
 Peak::Peak(std::string File1, std::string File2, const Vector3D &V_scale, const Vector3D &V, double angle):
     Cuboid(File1,File2,V_scale,V,angle){
-        //++number_of_peaks;
+        this->Count_Save_GlobalCoor();
 }
 
 

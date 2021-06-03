@@ -33,9 +33,11 @@
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0;
-    Vector3D Layout1 = {30,30,0}, Layout2 = {160,100,0};
-    double   Orient1 = 0, Orient2 = 25, Angle = 0;
+    Vector3D Layout,Scale;
+    char option[1] = {'m'}, kind[1];
+    double   Angle = 0;
     double   FlightLen;
+    double   x = 0,y = 0;
 
     std::shared_ptr<Drone> FirstDrone(new Drone()), SecondDrone(new Drone());
     std::shared_ptr<Peak>  FirstPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak1.dat",{20,20,60},{120,30,0},0) );
@@ -48,12 +50,12 @@ int main() {
     std::list<std::shared_ptr<SceneObject>> Objects;
 
     Scene Scene(Drones,Objects,SURFACE,Link);
-    char option[1] = {'m'};
+    
 
-    FirstDrone->MakeDrone(Layout1,Orient1,number_of_drones);
+    FirstDrone->MakeDrone({30,30,0},0,number_of_drones);
     FirstDrone->Count_Save_GlobalCoor();
 
-    SecondDrone->MakeDrone(Layout2,Orient2,number_of_drones);
+    SecondDrone->MakeDrone({160,100,0},25,number_of_drones);
     SecondDrone->Count_Save_GlobalCoor();
 
     FirstPeak->Count_Save_GlobalCoor();
@@ -89,8 +91,8 @@ int main() {
             case 'a':
                 Scene.SwitchActiveDrone();
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0]<< "  " << Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl << std::endl;
-                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
-                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout.show_all_vectors() << std::endl << std::endl;
                 break;
             case 'p':
                 std::cout << "Podaj kierunek lotu (kat w stopniach) > ";
@@ -140,9 +142,40 @@ int main() {
                 std::cout << std::endl;
                 
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0]<< "  " << Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl <<std::endl;
-                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
-                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout.show_all_vectors() << std::endl << std::endl;
 
+                break;
+            case 'd':
+                std::cout << "Wybierz rodzaj elementu powierzchni: " << std::endl << std::endl;
+                std::cout << "1 - Gora z ostrym szczytem\n";
+                std::cout << "2 - Gora z grania\n";
+                std::cout << "3 - Plaskowyz\n\n";
+                std::cout << "Wprowadz numer typu elementu > ";
+                std::cin >> kind;
+                std::cout << std::endl << std::endl;
+
+                std::cout << "Podaj skale wzdluz osi OX, OY i OZ." << std::endl;
+                std::cout << "Wprowadz skale OX,OY,OZ > " ;
+                std::cin >> Scale;
+                std::cout << std::endl << "Podaj wspolrzedne srodka podstawy x, y." << std::endl;
+                std::cout << "Wprowadz dane: x y > ";
+                std::cin >> x >> y;
+                Layout = {x,y,0};
+
+                switch(kind[0]){
+                    case '1':
+                        Scene.AddObject(std::shared_ptr<Peak>(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(3) + ".dat",Scale,Layout,0)) );
+                        break;
+                    default :
+                        exit(1);
+                }
+                
+
+                std::cout << "Element zostal dodany do sceny\n\n";
+
+                Link.Rysuj();
+                std::cin.ignore(10000,'\n');
                 break;
             case 'm':
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
@@ -151,8 +184,8 @@ int main() {
                 std::cout << "r - obrot po oktagonie\n";
                 std::cout << "m - wyswietl menu\n\n";
                 std::cout << "k - koniec dzialania programu\n\n";
-                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
-                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout.show_all_vectors() << std::endl << std::endl;
                 break;
             case 'r':
                 Link.ZmienTrybRys(PzG::TR_3D);
@@ -185,8 +218,8 @@ int main() {
                 if(!Scene.UseActiveDrone()->MakeVerticalFlight(-FLIGHTHEIHGT,Link)) return 1;
 
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
-                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
-                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout.show_all_vectors() << std::endl << std::endl;
 
                 break;
 
