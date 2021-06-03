@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/program.dir/src/Peak.cpp.o"
   "CMakeFiles/program.dir/src/Prism6.cpp.o"
   "CMakeFiles/program.dir/src/Scene.cpp.o"
+  "CMakeFiles/program.dir/src/Slope.cpp.o"
   "CMakeFiles/program.dir/src/Vector3D.cpp.o"
   "CMakeFiles/program.dir/src/example.cpp.o"
   "CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"

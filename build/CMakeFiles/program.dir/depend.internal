@@ -67,6 +67,16 @@ CMakeFiles/program.dir/src/Scene.cpp.o
  ../inc/Vector3D.hh
  ../inc/lacze_do_gnuplota.hh
  /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp
+CMakeFiles/program.dir/src/Slope.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/GeometricSolid.hh
+ ../inc/Matrix.hh
+ ../inc/Matrix3x3.hh
+ ../inc/SceneObject.hh
+ ../inc/Slope.hh
+ ../inc/Vector.hh
+ ../inc/Vector3D.hh
+ /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp
 CMakeFiles/program.dir/src/Vector3D.cpp.o
  ../inc/Vector.hh
  ../inc/Vector3D.hh

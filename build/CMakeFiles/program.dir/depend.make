@@ -67,6 +67,16 @@ CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../src/Scene.cpp
 
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/Cuboid.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/GeometricSolid.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/Matrix.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/Matrix3x3.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/SceneObject.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/Slope.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/Vector.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../inc/Vector3D.hh
+CMakeFiles/program.dir/src/Slope.cpp.o: ../src/Slope.cpp
+
 CMakeFiles/program.dir/src/Vector3D.cpp.o: ../inc/Vector.hh
 CMakeFiles/program.dir/src/Vector3D.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/program.dir/src/Vector3D.cpp.o: ../src/Vector3D.cpp

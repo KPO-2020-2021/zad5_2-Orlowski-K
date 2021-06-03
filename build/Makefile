@@ -779,6 +779,33 @@ src/Scene.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Scene.cpp.s
 .PHONY : src/Scene.cpp.s
 
+src/Slope.o: src/Slope.cpp.o
+
+.PHONY : src/Slope.o
+
+# target to build an object file
+src/Slope.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Slope.cpp.o
+.PHONY : src/Slope.cpp.o
+
+src/Slope.i: src/Slope.cpp.i
+
+.PHONY : src/Slope.i
+
+# target to preprocess a source file
+src/Slope.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Slope.cpp.i
+.PHONY : src/Slope.cpp.i
+
+src/Slope.s: src/Slope.cpp.s
+
+.PHONY : src/Slope.s
+
+# target to generate assembly for a file
+src/Slope.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Slope.cpp.s
+.PHONY : src/Slope.cpp.s
+
 src/Vector3D.o: src/Vector3D.cpp.o
 
 .PHONY : src/Vector3D.o
@@ -927,6 +954,9 @@ help:
 	@echo "... src/Scene.o"
 	@echo "... src/Scene.i"
 	@echo "... src/Scene.s"
+	@echo "... src/Slope.o"
+	@echo "... src/Slope.i"
+	@echo "... src/Slope.s"
 	@echo "... src/Vector3D.o"
 	@echo "... src/Vector3D.i"
 	@echo "... src/Vector3D.s"

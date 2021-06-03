@@ -36,7 +36,10 @@ int main() {
     double   Orient1 = 0, Orient2 = 25, Angle = 0;
     double   FlightLen;
     Drone FirstDrone, SecondDrone;
-    std::shared_ptr<Peak> FirstPeak(new Peak("../datasets/templates/obstacle.dat","../datasets/dat/Peak1.dat",{20,20,60},Layout_Obs,0) );
+
+    std::shared_ptr<Peak>  FirstPeak(new Peak("../datasets/templates/obstacle.dat","../datasets/dat/Peak1.dat",{20,20,60},Layout_Obs,0) );
+    std::shared_ptr<Slope> FirstSlope(new Slope("../datasets/templates/obstacle.dat","../datasets/dat/Slope1.dat",{20,80,60},{60,90,0},0) );
+
     std::vector<Vector3D> TracePoints;
     std::vector<Drone*>    Drones;
     std::list<std::shared_ptr<SceneObject>> Objects;
@@ -50,11 +53,13 @@ int main() {
     SecondDrone.Count_Save_GlobalCoor();
 
     FirstPeak->Count_Save_GlobalCoor();
+    FirstSlope->Count_Save_GlobalCoor();
 
     Scene.CreateSurface();
     Scene.AddDrone(FirstDrone);
     Scene.AddDrone(SecondDrone);
     Scene.AddObject(FirstPeak);
+    Scene.AddObject(FirstSlope);
 
     Link.ZmienTrybRys(PzG::TR_3D);
     Link.Inicjalizuj();

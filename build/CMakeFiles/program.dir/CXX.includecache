@@ -32,14 +32,14 @@ iostream
 Matrix.hh
 ../inc/Matrix.hh
 
-../inc/Peak.hh
+../inc/SceneObject.hh
+memory
+-
+
+../inc/Slope.hh
 Cuboid.hh
 ../inc/Cuboid.hh
 fstream
--
-
-../inc/SceneObject.hh
-memory
 -
 
 ../inc/Vector.hh
@@ -58,7 +58,7 @@ cassert
 Vector.hh
 ../inc/Vector.hh
 
-/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp
-Peak.hh
-/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp
+Slope.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.hh
 

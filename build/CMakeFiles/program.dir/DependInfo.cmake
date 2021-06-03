@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Peak.cpp.o"
   "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Prism6.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Prism6.cpp.o"
   "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Scene.cpp.o"
+  "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Slope.cpp.o"
   "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Vector3D.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/Vector3D.cpp.o"
   "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/example.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/example.cpp.o"
   "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/lacze_do_gnuplota.cpp" "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"

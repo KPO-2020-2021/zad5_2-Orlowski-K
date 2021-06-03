@@ -55,6 +55,11 @@
   "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp"
 },
 {
+  "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Slope.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp",
+  "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp"
+},
+{
   "directory": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests",
   "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/inc -I/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/main.cpp",
   "file": "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/tests/main.cpp"

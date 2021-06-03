@@ -187,6 +187,19 @@ CMakeFiles/program.dir/src/Peak.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Peak.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp -o CMakeFiles/program.dir/src/Peak.cpp.s
 
+CMakeFiles/program.dir/src/Slope.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/Slope.cpp.o: ../src/Slope.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/program.dir/src/Slope.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/Slope.cpp.o -c /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp
+
+CMakeFiles/program.dir/src/Slope.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/Slope.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp > CMakeFiles/program.dir/src/Slope.cpp.i
+
+CMakeFiles/program.dir/src/Slope.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Slope.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp -o CMakeFiles/program.dir/src/Slope.cpp.s
+
 program: CMakeFiles/program.dir/src/example.cpp.o
 program: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
 program: CMakeFiles/program.dir/src/Cuboid.cpp.o
@@ -197,6 +210,7 @@ program: CMakeFiles/program.dir/src/Prism6.cpp.o
 program: CMakeFiles/program.dir/src/Drone.cpp.o
 program: CMakeFiles/program.dir/src/Scene.cpp.o
 program: CMakeFiles/program.dir/src/Peak.cpp.o
+program: CMakeFiles/program.dir/src/Slope.cpp.o
 program: CMakeFiles/program.dir/build.make
 
 .PHONY : program
