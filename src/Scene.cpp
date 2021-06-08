@@ -32,16 +32,8 @@ Scene::Scene(std::vector<std::shared_ptr<Drone>> &DroneContener,std::list<std::s
  */
 void Scene::AddDrone(std::shared_ptr<Drone> NewDrone){
     Drones.push_back(NewDrone);
-    std::string Filename;
-
-    Filename = NewDrone->TakeFilename_Body();
     
-    Link.DodajNazwePliku( Filename.c_str() );
-    for(unsigned int Ind = 0; Ind < 4 ; ++Ind){
-        Filename = NewDrone->TakeFilename_Rotor((*NewDrone)[Ind]);
-        Link.DodajNazwePliku(Filename.c_str());
-    }
-
+    DrawDrone(NewDrone);
     if(Drones.size() == 1)
         Active = 0;
 
@@ -49,16 +41,17 @@ void Scene::AddDrone(std::shared_ptr<Drone> NewDrone){
 }
 
 
+void Scene::DrawDrone(std::shared_ptr<Drone> Drone){
+    std::string Filename;
 
-/*!
- *   \brief Metoda tworzaca plaszczyzne do rysowania
- *
- *   \retval  Dodanie sciezki do plaszczyzny do lacza do rysowania
- */
-void Scene::CreateSurface() {
-    Link.DodajNazwePliku(Filename_Surface.c_str());
+    Filename = Drone->TakeFilename_Body();
+    
+    Link.DodajNazwePliku( Filename.c_str() );
+    for(unsigned int Ind = 0; Ind < 4 ; ++Ind){
+        Filename = Drone->TakeFilename_Rotor((*Drone)[Ind]);
+        Link.DodajNazwePliku(Filename.c_str());
+    }
 }
-
 
 
 /*!
@@ -113,14 +106,64 @@ const std::shared_ptr<Drone> Scene::TakeActiveDrone() const{
 
 void Scene::AddObject(std::shared_ptr<SceneObject> NewObject){
     Objects.push_back(NewObject);
-
+    std::string Filename;
     if(NewObject->ObjectType() != "Drone"){
-        std::string Filename;
         Filename = NewObject->TakeFilename_FinalSolid();
         Link.DodajNazwePliku( Filename.c_str() );
     }
     else{
         this->AddDrone(std::dynamic_pointer_cast<Drone>(NewObject));
+    }
+
+}
+
+
+bool Scene::DeleteObject(const unsigned int &number_of_element){
+    std::list<std::shared_ptr<SceneObject>>::iterator Iter = Objects.begin();
+    if(number_of_element - 1 > Objects.size())
+        return false;
+    else if(number_of_element -1 < 3){
+        std::cout << "Nie usuwaj dronow!\n";
+        return false;
+    }
+
+    else{
+        std::advance(Iter,number_of_element - 1);
+        Objects.erase(Iter);
+    }
+    return true;
+}
+
+
+
+void Scene::ShowList() {
+    unsigned int index = 0;
+    
+    for(std::shared_ptr<SceneObject> &i : Objects){
+        if(i->ObjectType() != "Drone")
+            std::cout << "  " << ++index << " - " << i->ObjectType() << std::endl;
+        else{
+            ++index;
+        }
+    }
+    std::cout << Objects.size() << std::endl;
+}
+
+void Scene::Redraw(){
+
+    std::string Filename;
+    Link.UsunWszystkieNazwyPlikow();
+    Link.DodajNazwePliku(Filename_Surface.c_str());
+
+
+    for(std::shared_ptr<SceneObject> &i : Objects){
+        if(i->ObjectType() != "Drone"){
+            Filename = i->TakeFilename_FinalSolid();
+            Link.DodajNazwePliku(Filename.c_str());
+        }
+        else{
+            DrawDrone(std::dynamic_pointer_cast<Drone>(i));
+        }
     }
 
 }

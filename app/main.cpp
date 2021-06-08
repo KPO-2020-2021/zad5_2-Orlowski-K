@@ -33,6 +33,7 @@
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0, number_of_peaks = 0, number_of_slopes = 0, number_of_plateaus = 0;
+    unsigned int type = 0;
     Vector3D Layout,Scale;
     char option[1] = {'m'}, kind[1];
     double   Angle = 0;
@@ -57,20 +58,14 @@ int main() {
 
     SecondDrone->MakeDrone({160,100,0},25,number_of_drones);
     SecondDrone->Count_Save_GlobalCoor();
-    /*
-    FirstPeak->Count_Save_GlobalCoor();
-    SecondPeak->Count_Save_GlobalCoor();
-    FirstSlope->Count_Save_GlobalCoor();
-    FirstPlateau->Count_Save_GlobalCoor();
-    */
 
-    Scene.CreateSurface();
     Scene.AddObject(FirstDrone);
     Scene.AddObject(SecondDrone);
     Scene.AddObject(FirstPeak);
     Scene.AddObject(SecondPeak);
     Scene.AddObject(FirstSlope);
     Scene.AddObject(FirstPlateau);
+    Scene.Redraw();
 
     Link.ZmienTrybRys(PzG::TR_3D);
     Link.Inicjalizuj();
@@ -181,10 +176,35 @@ int main() {
                         break;
                 }
                 
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout.show_all_vectors() << std::endl << std::endl;
 
                 Link.Rysuj();
                 std::cin.ignore(10000,'\n');
                 break;
+            case 'u':
+                std::cout << "Wybierz element powierzchni do usuniecia:\n";
+                Scene.ShowList();
+                std::cout << std::endl << std::endl;
+                std::cout << "Podaj numer elementu > ";
+                std::cin >> type;
+                std::cout << std::endl;
+                if(Scene.DeleteObject(type) )
+                    std::cout << "Element zostal usuniety.\n\n";
+                else{
+                    std::cout << "Blad przy usuwaniu.\n\n";
+                }
+                Scene.Redraw();
+                Link.Rysuj();
+                std::cin.ignore(10000,'\n');
+
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout.show_all_vectors() << std::endl << std::endl;
+
+                break;
+
             case 'm':
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
                 std::cout << "a - wybierz aktywnego drona\n";

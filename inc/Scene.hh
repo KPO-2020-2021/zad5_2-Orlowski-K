@@ -70,10 +70,6 @@ class Scene{
         */
         std::shared_ptr<Drone> UseActiveDrone();
         /*!
-        *   \brief Metoda rysujaca plaszczyzne
-        */
-        void CreateSurface();
-        /*!
         *   \brief Metoda pozwalajaca na dostep do sciezki do powierzchni w trybie tylko do odczytu
         */
         const std::string& TakeFilename_Surface() const { return Filename_Surface; };
@@ -81,5 +77,15 @@ class Scene{
         *   \brief Metoda dodajaca objekt
         */
         void AddObject(std::shared_ptr<SceneObject> NewObject);
+        /*!
+        *   \brief Metoda dodajaca usuwajaca
+        */
+       bool DeleteObject(const unsigned int &number_of_element);
+
+       void ShowList();
+
+       void Redraw();
+
+       void DrawDrone(std::shared_ptr<Drone> Drone);
     
 };
