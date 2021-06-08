@@ -59,5 +59,5 @@ class Cuboid: public Solid{
         */
         double Take_OrientAngle() const {return OrientAngle;};
 
-        virtual const std::string ObjectType() const override {return "Prostopadloscian";};
+        virtual const std::string ObjectType() const override {return "Cuboid";};
 };

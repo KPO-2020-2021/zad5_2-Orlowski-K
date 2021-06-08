@@ -62,5 +62,5 @@ class Prism: public Solid{
         */
         double Take_OrientAngle() const {return OrientAngle;}; 
 
-        virtual const std::string ObjectType() const override {return "Graniastoslup";};
+        virtual const std::string ObjectType() const override {return "Prism";};
 };
