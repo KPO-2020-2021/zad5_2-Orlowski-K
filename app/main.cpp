@@ -103,20 +103,12 @@ int main() {
                 Link.UstawZakresY(0, 200);
                 Link.UstawZakresZ(0, 120);
 
-
-                Link.UstawRotacjeXZ(64,65);
-
                 Link.Rysuj();
-                std::cout << std::endl << "Nacisnij ENTER, aby pokazac sciezke przelotu drona " << std::flush;
-                std::cin.ignore(10000,'\n');
+
 
                 Scene.UseActiveDrone()->MakeTrack(Angle,FlightLen,TracePoints);
                 Link.DodajNazwePliku(FLIGHT_TRACK);
                 Link.Rysuj();
-                
-                std::cout << "Nacisnij ENTER, aby wykonac animacje lotu drona " << std::flush;
-                std::cin.ignore(10000,'\n');
-
 
                 if(!Scene.UseActiveDrone()->MakeVerticalFlight(FLIGHTHEIHGT,Link)) return 1;
 
@@ -126,14 +118,9 @@ int main() {
 
                 if(!Scene.UseActiveDrone()->MakeVerticalFlight(-FLIGHTHEIHGT,Link)) return 1;
 
-                std::cout << std::endl << "Nacisnij ENTER, aby usunac sciezke ... " << std::flush;
-                std::cin.ignore(10000,'\n');
-
                 Link.UsunOstatniaNazwe();
                 Link.Rysuj();
                 
-                std::cout << "Nacisnij ENTER, aby zakonczyc ... " << std::flush;
-                std::cin.ignore(10000,'\n');
                 std::cout << std::endl;
                 
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0]<< "  " << Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl <<std::endl;
@@ -160,7 +147,7 @@ int main() {
 
                 switch(kind[0]){
                     case '1':
-                        Scene.AddObject(std::shared_ptr<Peak>(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",Scale,Layout,0)) );
+                        Scene.AddObject(std::make_shared<Peak>(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",Scale,Layout,0) );
                         std::cout << "Element zostal dodany do sceny\n\n";
                         break;
                     case '2':
@@ -185,15 +172,20 @@ int main() {
                 break;
             case 'u':
                 std::cout << "Wybierz element powierzchni do usuniecia:\n";
-                Scene.ShowList();
-                std::cout << std::endl << std::endl;
-                std::cout << "Podaj numer elementu > ";
-                std::cin >> type;
-                std::cout << std::endl;
-                if(Scene.DeleteObject(type) )
-                    std::cout << "Element zostal usuniety.\n\n";
+                if(!Scene.ShowList()){
+                    std::cout << "Scena jest pusta!!!\n\n";
+                    break;
+                }
                 else{
-                    std::cout << "Blad przy usuwaniu.\n\n";
+                    std::cout << std::endl << std::endl;
+                    std::cout << "Podaj numer elementu > ";
+                    std::cin >> type;
+                    std::cout << std::endl;
+                    if(Scene.DeleteObject(type) )
+                        std::cout << "Element zostal usuniety.\n\n";
+                    else{
+                        std::cout << "Blad przy usuwaniu.\n\n";
+                    }
                 }
                 Scene.Redraw();
                 Link.Rysuj();

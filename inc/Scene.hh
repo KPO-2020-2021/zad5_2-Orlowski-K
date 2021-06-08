@@ -82,7 +82,7 @@ class Scene{
         */
        bool DeleteObject(const unsigned int &number_of_element);
 
-       void ShowList();
+       bool ShowList();
 
        void Redraw();
 

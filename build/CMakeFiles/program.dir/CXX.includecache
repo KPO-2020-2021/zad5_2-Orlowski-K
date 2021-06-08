@@ -50,6 +50,18 @@ iostream
 Matrix.hh
 ../inc/Matrix.hh
 
+../inc/Peak.hh
+Cuboid.hh
+../inc/Cuboid.hh
+fstream
+-
+
+../inc/Plateau.hh
+Cuboid.hh
+../inc/Cuboid.hh
+fstream
+-
+
 ../inc/Prism6.hh
 GeometricSolid.hh
 ../inc/GeometricSolid.hh
@@ -65,6 +77,12 @@ memory
 -
 Vector3D.hh
 ../inc/Vector3D.hh
+
+../inc/Slope.hh
+Cuboid.hh
+../inc/Cuboid.hh
+fstream
+-
 
 ../inc/Vector.hh
 iostream
@@ -90,9 +108,25 @@ list
 vector
 -
 
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Cuboid.cpp
+Cuboid.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Cuboid.hh
+
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Drone.cpp
 Drone.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Drone.hh
+
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/GeometricSolid.cpp
+GeometricSolid.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/GeometricSolid.hh
+
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.cpp
+Peak.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Peak.hh
+
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Plateau.cpp
+Plateau.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Plateau.hh
 
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Prism6.cpp
 Prism6.hh
@@ -101,4 +135,8 @@ Prism6.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.cpp
 Scene.hh
 /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Scene.hh
+
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.cpp
+Slope.hh
+/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/src/Slope.hh
 

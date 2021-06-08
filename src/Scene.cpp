@@ -122,11 +122,10 @@ bool Scene::DeleteObject(const unsigned int &number_of_element){
     std::list<std::shared_ptr<SceneObject>>::iterator Iter = Objects.begin();
     if(number_of_element - 1 > Objects.size())
         return false;
-    else if(number_of_element -1 < 3){
+    else if(number_of_element -1 < 2){
         std::cout << "Nie usuwaj dronow!\n";
         return false;
     }
-
     else{
         std::advance(Iter,number_of_element - 1);
         Objects.erase(Iter);
@@ -136,17 +135,21 @@ bool Scene::DeleteObject(const unsigned int &number_of_element){
 
 
 
-void Scene::ShowList() {
+bool Scene::ShowList() {
     unsigned int index = 0;
+
+    if(Objects.size() == 2)
+        return false;
     
     for(std::shared_ptr<SceneObject> &i : Objects){
         if(i->ObjectType() != "Drone")
-            std::cout << "  " << ++index << " - (" << i->Take()[0] << ", " << i->Take()[1] << ") "<< i->ObjectType() << std::endl;
+            std::cout<< "  " << ++index << " - (" << i->Take()[0] << ", " << i->Take()[1] << ") "<< i->ObjectType() << std::endl;
         else{
             ++index;
         }
     }
-    std::cout << Objects.size() << std::endl;
+
+    return true;
 }
 
 void Scene::Redraw(){

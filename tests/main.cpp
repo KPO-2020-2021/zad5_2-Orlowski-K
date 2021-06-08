@@ -371,7 +371,7 @@ TEST_CASE("Test metod wirtualnych dla Cuboid"){
 TEST_CASE("Test metod wirtualnych dla Drone"){
     Drone test;
 
-    CHECK( test.ObjectType() == "Dron");
+    CHECK( test.ObjectType() == "Drone");
 }
 
 TEST_CASE("Test metod wirtualnych dla Peak"){
