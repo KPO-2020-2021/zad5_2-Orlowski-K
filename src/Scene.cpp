@@ -141,7 +141,7 @@ void Scene::ShowList() {
     
     for(std::shared_ptr<SceneObject> &i : Objects){
         if(i->ObjectType() != "Drone")
-            std::cout << "  " << ++index << " - " << i->ObjectType() << std::endl;
+            std::cout << "  " << ++index << " - (" << i->Take()[0] << ", " << i->Take()[1] << ") "<< i->ObjectType() << std::endl;
         else{
             ++index;
         }

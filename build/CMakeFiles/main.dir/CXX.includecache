@@ -75,6 +75,8 @@ SceneObject.hh
 ../inc/SceneObject.hh
 memory
 -
+Vector3D.hh
+../inc/Vector3D.hh
 
 ../inc/Slope.hh
 Cuboid.hh

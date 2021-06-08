@@ -127,6 +127,6 @@ class Drone: public SceneObject{
 
         virtual const std::string& TakeFilename_FinalSolid() const override;
 
-
+        virtual const Vector3D& Take() const override {return Layout;};
 
 };

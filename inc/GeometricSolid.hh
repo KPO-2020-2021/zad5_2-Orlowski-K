@@ -65,5 +65,7 @@ class Solid: public SceneObject{
 
         virtual const std::string ObjectType() const override {return "Solid";};
 
+        virtual const Vector3D& Take() const override {return scale;};
+
 };
 
