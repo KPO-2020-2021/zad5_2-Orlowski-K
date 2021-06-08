@@ -16,7 +16,7 @@ Plateau::~Plateau(){
 
 Plateau::Plateau(std::string File1, std::string File2, const Vector3D &V_scale, const Vector3D &V, double angle):
     Cuboid(File1,File2,V_scale,V,angle){
-        //++number_of_peaks;
+        this->Count_Save_GlobalCoor();
 }
 
 

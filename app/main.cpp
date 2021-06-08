@@ -32,7 +32,7 @@
 
 int main() {
     PzG::LaczeDoGNUPlota Link;
-    unsigned int number_of_drones = 0;
+    unsigned int number_of_drones = 0, number_of_peaks = 0, number_of_slopes = 0, number_of_plateaus = 0;
     Vector3D Layout,Scale;
     char option[1] = {'m'}, kind[1];
     double   Angle = 0;
@@ -40,10 +40,10 @@ int main() {
     double   x = 0,y = 0;
 
     std::shared_ptr<Drone> FirstDrone(new Drone()), SecondDrone(new Drone());
-    std::shared_ptr<Peak>  FirstPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak1.dat",{20,20,60},{120,30,0},0) );
-    std::shared_ptr<Peak>  SecondPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak2.dat",{40,40,50},{35,150,0},0) );
-    std::shared_ptr<Slope> FirstSlope(new Slope(FILE_OBSTACLE,"../datasets/dat/Slope1.dat",{20,80,60},{60,90,0},0) );
-    std::shared_ptr<Plateau> FirstPlateau(new Plateau(FILE_OBSTACLE,"../datasets/dat/Plateau1.dat",{50,60,15},{105,105,0},0) );
+    std::shared_ptr<Peak>  FirstPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",{20,20,60},{130,30,0},0) );
+    std::shared_ptr<Peak>  SecondPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",{40,40,50},{35,160,0},0) );
+    std::shared_ptr<Slope> FirstSlope(new Slope(FILE_OBSTACLE,"../datasets/dat/Slope" + std::to_string(++number_of_slopes) + ".dat",{20,80,60},{60,90,0},0) );
+    std::shared_ptr<Plateau> FirstPlateau(new Plateau(FILE_OBSTACLE,"../datasets/dat/Plateau" + std::to_string(++number_of_plateaus) + ".dat",{50,60,15},{105,105,0},0) );
 
     std::vector<Vector3D>                   TracePoints;
     std::vector<std::shared_ptr<Drone>>     Drones;
@@ -57,12 +57,12 @@ int main() {
 
     SecondDrone->MakeDrone({160,100,0},25,number_of_drones);
     SecondDrone->Count_Save_GlobalCoor();
-
+    /*
     FirstPeak->Count_Save_GlobalCoor();
     SecondPeak->Count_Save_GlobalCoor();
     FirstSlope->Count_Save_GlobalCoor();
     FirstPlateau->Count_Save_GlobalCoor();
-
+    */
 
     Scene.CreateSurface();
     Scene.AddObject(FirstDrone);
@@ -165,14 +165,22 @@ int main() {
 
                 switch(kind[0]){
                     case '1':
-                        Scene.AddObject(std::shared_ptr<Peak>(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(3) + ".dat",Scale,Layout,0)) );
+                        Scene.AddObject(std::shared_ptr<Peak>(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",Scale,Layout,0)) );
+                        std::cout << "Element zostal dodany do sceny\n\n";
+                        break;
+                    case '2':
+                        Scene.AddObject(std::shared_ptr<Slope>(new Slope(FILE_OBSTACLE,"../datasets/dat/Slope" + std::to_string(++number_of_slopes) + ".dat",Scale,Layout,0)) );
+                        std::cout << "Element zostal dodany do sceny\n\n";
+                        break;
+                    case '3':
+                        Scene.AddObject(std::shared_ptr<Plateau>(new Plateau(FILE_OBSTACLE,"../datasets/dat/Plateau" + std::to_string(++number_of_plateaus) + ".dat",Scale,Layout,0)) );
+                        std::cout << "Element zostal dodany do sceny\n\n";
                         break;
                     default :
-                        exit(1);
+                        std::cerr << std::endl << "Blad: Podany typ nie istnieje. Blad dodawania !!!\n";
+                        break;
                 }
                 
-
-                std::cout << "Element zostal dodany do sceny\n\n";
 
                 Link.Rysuj();
                 std::cin.ignore(10000,'\n');
@@ -181,6 +189,8 @@ int main() {
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
                 std::cout << "a - wybierz aktywnego drona\n";
                 std::cout << "p - zadaj parametry przelotu\n";
+                std::cout << "d - dodaj element powierzchni\n";
+                std::cout << "u - usun element powierzchni\n";
                 std::cout << "r - obrot po oktagonie\n";
                 std::cout << "m - wyswietl menu\n\n";
                 std::cout << "k - koniec dzialania programu\n\n";

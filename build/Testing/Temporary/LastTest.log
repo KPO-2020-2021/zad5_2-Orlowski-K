@@ -1,0 +1,24 @@
+Start testing: Jun 08 12:15 CEST
+----------------------------------------------------------
+1/1 Testing: program.unit_tests
+1/1 Test: program.unit_tests
+Command: "/home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/unit_tests" "-V"
+Directory: /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/build/tests
+"program.unit_tests" start time: Jun 08 12:15 CEST
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.5"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases: 41 | 41 passed | 0 failed | 0 skipped
+[doctest] assertions: 41 | 41 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"program.unit_tests" end time: Jun 08 12:15 CEST
+"program.unit_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 08 12:15 CEST
