@@ -16,5 +16,5 @@ class Plateau: public Cuboid{
 
         bool Count_Save_GlobalCoor();
 
-        virtual const std::string ObjectType() const override {return "Plateau";};
+        virtual const std::string ObjectType() const override {return "Plaskowyz";};
 };

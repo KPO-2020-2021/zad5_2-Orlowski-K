@@ -15,7 +15,7 @@ class Peak: public Cuboid{
 
         Peak(std::string File1, std::string File2, const Vector3D &V_scale, const Vector3D &V, double angle);
 
-        virtual const std::string ObjectType() const override {return "Peak";};
+        virtual const std::string ObjectType() const override {return "Gora z ostrym szczytem";};
 
         bool Count_Save_GlobalCoor();
 };

@@ -63,7 +63,7 @@ class Solid: public SceneObject{
         */
         Vector3D Scale(const Vector3D& Vertex) const;
 
-        virtual const std::string ObjectType() const override {return "Solid";};
+        virtual const std::string ObjectType() const override {return "Bryla geometryczna";};
 
 };
 

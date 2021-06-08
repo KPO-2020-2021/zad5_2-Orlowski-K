@@ -16,5 +16,5 @@ class Slope: public Cuboid{
 
         bool Count_Save_GlobalCoor();
 
-        virtual const std::string ObjectType() const override {return "Slope";};
+        virtual const std::string ObjectType() const override {return "Gora z dluga grania";};
 };
