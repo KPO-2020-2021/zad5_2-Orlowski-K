@@ -22,25 +22,26 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Dragonfly", "index.html", [
+  [ "DragonFly", "index.html", [
     [ "Wizualizacja niektórych elementów misji Dragonfly", "index.html", [
       [ "Charakterystyka misji Dragonfly", "index.html#charakterystyka", null ],
       [ "Diagram przypadków użycia", "index.html#usecase-diagram", null ],
       [ "Diagram podstawowych klas", "index.html#class-diagram", null ],
       [ "Diagramy czynności dla wybranych metod", "index.html#activity-diagram", null ]
     ] ],
-    [ "Faza 1", "md__r_e_a_d_m_e.html", [
-      [ "Uruchamianie programu i testy", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Dokumentacja", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
+    [ "Faza 2", "md__r_e_a_d_m_e.html", [
+      [ "Faza 1", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Uruchamianie programu i testy", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Dokumentacja", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md4", null ]
     ] ],
     [ "README", "md_tests_bin_queue_8pyi_models_piston_rod_part_ariac__r_e_a_d_m_e.html", null ],
     [ "Gazebo Experiment Rooms", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html", [
-      [ "Test Example", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md5", [
-        [ "Room1", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md6", null ],
-        [ "Room2", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md7", null ],
-        [ "Room3", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md8", null ],
-        [ "Room4", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md9", null ]
+      [ "Test Example", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md6", [
+        [ "Room1", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md7", null ],
+        [ "Room2", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md8", null ],
+        [ "Room3", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md9", null ],
+        [ "Room4", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md10", null ]
       ] ]
     ] ],
     [ "Instrukcje oraz pomoce naukowe", "md_tests_doctest_translation_8pyi_social-tracking-protection-linkedin-digest256_8vlpset__r_e_a_d_m_e.html", null ],
@@ -83,14 +84,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_8__doctest_8cpp.html",
-"class_vector.html",
-"doctest_8h.html#a04b10595f3fac969e7682a48fd3ad0c6",
-"doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f",
-"doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84",
-"doctest__fwd_8h.html#a3e4fea4166b5decb632d30f6160baef3",
-"doctest__fwd_8h.html#ad17ac1cc3242c45a461b1364c13cde55",
-"foo_8cpp.html#a14bcd2d544b22300bba3863251393e0f",
-"structdoctest_1_1_i_reporter.html#a5bb54923eab233bb02f2fcfc178fa12a"
+"class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f",
+"doctest_8cpp.html#a8f3293f622cc7fbd71ddfeb73fb37340",
+"doctest_8h.html#a660ce2901f42d4d2a82327204a6a3602",
+"doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3a4fdc484830c8109f424ddb2615474473",
+"doctest__fwd_8h.html#a32e9eaf6013139846e848af6e6cf2b92a04988252804e4f608acacb74706425b9",
+"doctest__fwd_8h.html#ab56f4f5033407b30858e190309901ff2",
+"doctest__fwd_8h.html#afa35d3126ad91dfec4b448f862279df2",
+"structdoctest_1_1_context_options.html#a4fc9b6673b818b8cb5969725f16b59c3",
+"tests_2main_8cpp.html#a42720d19762db60cda1dc33c1e237a6d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

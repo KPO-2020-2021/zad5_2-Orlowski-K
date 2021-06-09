@@ -1,0 +1,9 @@
+<map id="Slope::Slope" name="Slope::Slope">
+<area shape="rect" id="node1" title="Konstruktor parametryczny." alt="" coords="5,78,108,105"/>
+<area shape="rect" id="node2" href="$class_slope.html#a95ae71464931ec3dbfaa8a9cb79f6aee" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="156,78,379,105"/>
+<area shape="rect" id="node3" href="$class_solid.html#ad505305edd057147ccc6c0fb174996c1" title="Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="453,5,604,47"/>
+<area shape="rect" id="node4" href="$class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="453,71,604,112"/>
+<area shape="rect" id="node5" href="$class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="427,136,631,177"/>
+<area shape="rect" id="node6" href="$_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="679,118,800,145"/>
+<area shape="rect" id="node7" href="$class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="691,169,788,195"/>
+</map>

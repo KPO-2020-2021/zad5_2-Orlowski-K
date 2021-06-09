@@ -4,11 +4,11 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = Dragonfly
-PROJECT_NUMBER         = 5.1
+PROJECT_NAME           = DragonFly
+PROJECT_NUMBER         = 5.2
 PROJECT_BRIEF          =
-PROJECT_LOGO           = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/img/dragonfly-icon.png
-OUTPUT_DIRECTORY       = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/Documentation
+PROJECT_LOGO           = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/img/dragonfly-icon.png
+OUTPUT_DIRECTORY       = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K/Documentation
 CREATE_SUBDIRS         = NO
 ALLOW_UNICODE_NAMES    = NO
 OUTPUT_LANGUAGE        = Polish
@@ -116,7 +116,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K
+INPUT                  = /home/kamil/Pulpit/po/rep1/zad5_2-Orlowski-K
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c \
                          *.cc \
@@ -173,7 +173,7 @@ EXCLUDE_SYMBOLS        =
 EXAMPLE_PATH           =
 EXAMPLE_PATTERNS       = *
 EXAMPLE_RECURSIVE      = NO
-IMAGE_PATH             = /home/kamil/Pulpit/po/rep1/zad5_1-Orlowski-K/img
+IMAGE_PATH             = ./img
 INPUT_FILTER           =
 FILTER_PATTERNS        =
 FILTER_SOURCE_FILES    = NO
@@ -253,7 +253,7 @@ MATHJAX_FORMAT         = HTML-CSS
 MATHJAX_RELPATH        = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/
 MATHJAX_EXTENSIONS     =
 MATHJAX_CODEFILE       =
-SEARCHENGINE           = YES
+SEARCHENGINE           = NO
 SERVER_BASED_SEARCH    = NO
 EXTERNAL_SEARCH        = NO
 SEARCHENGINE_URL       =
@@ -263,7 +263,7 @@ EXTRA_SEARCH_MAPPINGS  =
 #---------------------------------------------------------------------------
 # Configuration options related to the LaTeX output
 #---------------------------------------------------------------------------
-GENERATE_LATEX         = YES
+GENERATE_LATEX         = NO
 LATEX_OUTPUT           = latex
 LATEX_CMD_NAME         =
 MAKEINDEX_CMD_NAME     = makeindex
@@ -361,7 +361,7 @@ COLLABORATION_GRAPH    = YES
 GROUP_GRAPHS           = YES
 UML_LOOK               = NO
 UML_LIMIT_NUM_FIELDS   = 10
-TEMPLATE_RELATIONS     = YES
+TEMPLATE_RELATIONS     = NO
 INCLUDE_GRAPH          = YES
 INCLUDED_BY_GRAPH      = YES
 CALL_GRAPH             = YES

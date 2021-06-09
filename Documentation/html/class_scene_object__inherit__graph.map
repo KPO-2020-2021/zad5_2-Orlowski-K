@@ -1,0 +1,10 @@
+<map id="SceneObject" name="SceneObject">
+<area shape="rect" id="node1" title=" " alt="" coords="69,5,172,32"/>
+<area shape="rect" id="node2" href="$class_drone.html" title="Klasa opisujaca drona." alt="" coords="49,80,110,107"/>
+<area shape="rect" id="node3" href="$class_solid.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="135,80,189,107"/>
+<area shape="rect" id="node4" href="$class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="86,155,153,181"/>
+<area shape="rect" id="node8" href="$class_prism.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="177,155,235,181"/>
+<area shape="rect" id="node5" href="$class_peak.html" title=" " alt="" coords="5,229,60,256"/>
+<area shape="rect" id="node6" href="$class_plateau.html" title=" " alt="" coords="84,229,155,256"/>
+<area shape="rect" id="node7" href="$class_slope.html" title=" " alt="" coords="179,229,238,256"/>
+</map>

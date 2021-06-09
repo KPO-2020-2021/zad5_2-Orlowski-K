@@ -1,0 +1,21 @@
+<map id="SceneObject.hh" name="SceneObject.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="422,5,545,32"/>
+<area shape="rect" id="node2" href="$app_2main_8cpp.html" title=" " alt="" coords="256,379,338,405"/>
+<area shape="rect" id="node3" href="$_geometric_solid_8hh.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="252,80,395,107"/>
+<area shape="rect" id="node5" href="$_drone_8hh.html" title="Klasa opisujaca drona." alt="" coords="443,229,524,256"/>
+<area shape="rect" id="node6" href="$_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="575,304,656,331"/>
+<area shape="rect" id="node8" href="$tests_2main_8cpp.html" title=" " alt="" coords="469,379,552,405"/>
+<area shape="rect" id="node4" href="$_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="340,155,427,181"/>
+<area shape="rect" id="node17" href="$_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="230,155,316,181"/>
+<area shape="rect" id="node19" href="$_geometric_solid_8cpp.html" title=" " alt="" coords="56,155,205,181"/>
+<area shape="rect" id="node10" href="$_peak_8hh.html" title=" " alt="" coords="262,304,337,331"/>
+<area shape="rect" id="node12" href="$_plateau_8hh.html" title=" " alt="" coords="44,304,134,331"/>
+<area shape="rect" id="node14" href="$_slope_8hh.html" title=" " alt="" coords="159,304,238,331"/>
+<area shape="rect" id="node16" href="$_cuboid_8cpp.html" title=" " alt="" coords="219,229,314,256"/>
+<area shape="rect" id="node9" href="$_drone_8cpp.html" title=" " alt="" coords="361,304,449,331"/>
+<area shape="rect" id="node7" href="$_scene_8cpp.html" title=" " alt="" coords="576,379,664,405"/>
+<area shape="rect" id="node11" href="$_peak_8cpp.html" title=" " alt="" coords="363,379,444,405"/>
+<area shape="rect" id="node13" href="$_plateau_8cpp.html" title=" " alt="" coords="24,379,122,405"/>
+<area shape="rect" id="node15" href="$_slope_8cpp.html" title=" " alt="" coords="146,379,232,405"/>
+<area shape="rect" id="node18" href="$_prism6_8cpp.html" title=" " alt="" coords="48,229,143,256"/>
+</map>

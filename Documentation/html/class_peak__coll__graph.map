@@ -1,0 +1,7 @@
+<map id="Peak" name="Peak">
+<area shape="rect" id="node1" title=" " alt="" coords="143,247,197,273"/>
+<area shape="rect" id="node2" href="$class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="137,171,203,197"/>
+<area shape="rect" id="node3" href="$class_solid.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="105,95,160,121"/>
+<area shape="rect" id="node4" href="$class_scene_object.html" title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node5" href="$class_vector.html" title=" " alt="" coords="132,5,285,32"/>
+</map>

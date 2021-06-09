@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Dokumentacja klasy Solid</title>
+<title>DragonFly: Dokumentacja klasy Solid</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,9 +13,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,8 +23,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dragonfly
-   &#160;<span id="projectnumber">5.1</span>
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
    </div>
   </td>
  </tr>
@@ -36,18 +33,12 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.17 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Szukaj');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -68,20 +59,6 @@ $(document).ready(function(){initNavTree('class_solid.html',''); initResizable()
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
@@ -101,9 +78,13 @@ Diagram dziedziczenia dla Solid</div>
 <div class="dyncontent">
 <div class="center"><img src="class_solid__inherit__graph.png" border="0" usemap="#_solid_inherit__map" alt="Inheritance graph"/></div>
 <map name="_solid_inherit__map" id="_solid_inherit__map">
-<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="54,5,109,32"/>
-<area shape="rect" href="class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="5,80,72,107"/>
-<area shape="rect" href="class_prism.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="96,80,155,107"/>
+<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="135,80,189,107"/>
+<area shape="rect" href="class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="86,155,153,181"/>
+<area shape="rect" href="class_prism.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="177,155,235,181"/>
+<area shape="rect" href="class_scene_object.html" title=" " alt="" coords="111,5,213,32"/>
+<area shape="rect" href="class_peak.html" title=" " alt="" coords="5,229,60,256"/>
+<area shape="rect" href="class_plateau.html" title=" " alt="" coords="84,229,155,256"/>
+<area shape="rect" href="class_slope.html" title=" " alt="" coords="179,229,238,256"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <div class="dynheader">
@@ -111,9 +92,9 @@ Diagram współpracy dla Solid:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_solid__coll__graph.png" border="0" usemap="#_solid_coll__map" alt="Collaboration graph"/></div>
 <map name="_solid_coll__map" id="_solid_coll__map">
-<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="57,199,112,225"/>
-<area shape="rect" href="class_vector.html" title=" " alt="" coords="8,109,161,136"/>
-<area shape="rect" href="class_vector.html" title="Szablon opisujacy wektor w przestrzeni. Za jego pomoca opisywane sa wierzcholki dowolnej figury jako ..." alt="" coords="5,5,164,47"/>
+<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="105,95,160,121"/>
+<area shape="rect" href="class_scene_object.html" title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect" href="class_vector.html" title=" " alt="" coords="132,5,285,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
@@ -127,12 +108,18 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a845f3e314cf6ed5f9125cac11382a43e"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e">TakeFilename_TemplateSolid</a> () const</td></tr>
 <tr class="memdesc:a845f3e314cf6ed5f9125cac11382a43e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwracajaca sciezke do pliku wzorcowego.  <a href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e">Więcej...</a><br /></td></tr>
 <tr class="separator:a845f3e314cf6ed5f9125cac11382a43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82e9a14c3ac06eec6bf717a6777cda2"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2">TakeFilename_FinalSolid</a> () const</td></tr>
-<tr class="memdesc:af82e9a14c3ac06eec6bf717a6777cda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwracajaca sciezke do pliku z docelowa bryla.  <a href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2">Więcej...</a><br /></td></tr>
-<tr class="separator:af82e9a14c3ac06eec6bf717a6777cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad505305edd057147ccc6c0fb174996c1"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#ad505305edd057147ccc6c0fb174996c1">TakeFilename_FinalSolid</a> () const override</td></tr>
+<tr class="memdesc:ad505305edd057147ccc6c0fb174996c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla.  <a href="class_solid.html#ad505305edd057147ccc6c0fb174996c1">Więcej...</a><br /></td></tr>
+<tr class="separator:ad505305edd057147ccc6c0fb174996c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b8df098d571113383b1a6fcc12b44b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b">Scale</a> (const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> &amp;Vertex) const</td></tr>
 <tr class="memdesc:a76b8df098d571113383b1a6fcc12b44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalujaca wektor.  <a href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b">Więcej...</a><br /></td></tr>
 <tr class="separator:a76b8df098d571113383b1a6fcc12b44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87687ab102656cb03b5a0aa14395e8b0"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#a87687ab102656cb03b5a0aa14395e8b0">ObjectType</a> () const override</td></tr>
+<tr class="memdesc:a87687ab102656cb03b5a0aa14395e8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wirtualna odpowiadajaca za zwracanie typu klasy.  <a href="class_solid.html#a87687ab102656cb03b5a0aa14395e8b0">Więcej...</a><br /></td></tr>
+<tr class="separator:a87687ab102656cb03b5a0aa14395e8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc48a4f98acc5647806f325e85490040"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solid.html#afc48a4f98acc5647806f325e85490040">Take</a> () const override</td></tr>
+<tr class="memdesc:afc48a4f98acc5647806f325e85490040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wirtualna odpowiadajaca za zwracanie wektora skalowania.  <a href="class_solid.html#afc48a4f98acc5647806f325e85490040">Więcej...</a><br /></td></tr>
+<tr class="separator:afc48a4f98acc5647806f325e85490040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
@@ -149,7 +136,7 @@ Atrybuty prywatne</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa opisuje pojecie bryly geometrycznej w przestrzeni. Sklada sie z pol przechowujacych sciezki do plikow z wzorcowymi brylami oraz docelowym miejscem skladowania bryl. Wektor jest uzywany do slkalowania bryl. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00024">24</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00025">25</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a2cf157c87df66dc3eb8722f9b3ee8f66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2cf157c87df66dc3eb8722f9b3ee8f66">&#9670;&nbsp;</a></span>Solid() <span class="overload">[1/2]</span></h2>
@@ -221,6 +208,46 @@ Atrybuty prywatne</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a87687ab102656cb03b5a0aa14395e8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87687ab102656cb03b5a0aa14395e8b0">&#9670;&nbsp;</a></span>ObjectType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string Solid::ObjectType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplementowana z <a class="el" href="class_scene_object.html#afec30a391fea688a1e690190006adde7">SceneObject</a>.</p>
+
+<p>Reimplementowana w <a class="el" href="class_prism.html#a63bc095b6149256a4a3eab3073a396f9">Prism</a>, <a class="el" href="class_cuboid.html#af912d080cf6ff63534005d260a6415f1">Cuboid</a>, <a class="el" href="class_plateau.html#a9b248f6a79273a6fa681f13cb1b9b1c0">Plateau</a>, <a class="el" href="class_slope.html#ac974f0325045c717c5a2dd2e9146318f">Slope</a> i <a class="el" href="class_peak.html#a65b9f5765a6d75893677af69a2f5de85">Peak</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00067">67</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_solid_a87687ab102656cb03b5a0aa14395e8b0_icgraph.png" border="0" usemap="#class_solid_a87687ab102656cb03b5a0aa14395e8b0_icgraph" alt=""/></div>
+<map name="class_solid_a87687ab102656cb03b5a0aa14395e8b0_icgraph" id="class_solid_a87687ab102656cb03b5a0aa14395e8b0_icgraph">
+<area shape="rect" title="Metoda wirtualna odpowiadajaca za zwracanie typu klasy." alt="" coords="148,5,283,32"/>
+<area shape="rect" href="tests_2main_8cpp.html#a301c05259279821924baca2811b2c5ba" title=" " alt="" coords="5,5,100,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a76b8df098d571113383b1a6fcc12b44b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76b8df098d571113383b1a6fcc12b44b">&#9670;&nbsp;</a></span>Scale()</h2>
 
@@ -256,26 +283,31 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_solid_a76b8df098d571113383b1a6fcc12b44b_icgraph.png" border="0" usemap="#class_solid_a76b8df098d571113383b1a6fcc12b44b_icgraph" alt=""/></div>
 <map name="class_solid_a76b8df098d571113383b1a6fcc12b44b_icgraph" id="class_solid_a76b8df098d571113383b1a6fcc12b44b_icgraph">
-<area shape="rect" title="Metoda skalujaca wektor." alt="" coords="1169,75,1267,101"/>
-<area shape="rect" href="tests_2main_8cpp.html#a1f6da33d9db2969008ebfb2c8c9ae502" title=" " alt="" coords="972,16,1067,43"/>
-<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="921,67,1117,109"/>
-<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="917,133,1121,174"/>
-<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,31,869,57"/>
-<area shape="rect" href="tests_2main_8cpp.html#a43e394cb3b5cdd6d9e90e487a93f038a" title=" " alt="" coords="706,81,801,108"/>
-<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
-<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
-<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
-<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
-<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
-<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,132,869,159"/>
-<area shape="rect" href="tests_2main_8cpp.html#a39b5b5604ab614bb93b9471aac987fed" title=" " alt="" coords="706,183,801,209"/>
+<area shape="rect" title="Metoda skalujaca wektor." alt="" coords="1067,64,1164,91"/>
+<area shape="rect" href="tests_2main_8cpp.html#a1f6da33d9db2969008ebfb2c8c9ae502" title=" " alt="" coords="869,5,964,32"/>
+<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="819,57,1015,98"/>
+<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="815,187,1019,229"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="535,13,767,40"/>
+<area shape="rect" href="tests_2main_8cpp.html#a43e394cb3b5cdd6d9e90e487a93f038a" title=" " alt="" coords="603,64,698,91"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="261,64,487,91"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="10,13,209,40"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="5,64,213,91"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="14,115,205,141"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="535,115,766,141"/>
+<area shape="rect" href="class_slope.html#a95ae71464931ec3dbfaa8a9cb79f6aee" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="539,165,762,192"/>
+<area shape="rect" href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="573,217,729,258"/>
+<area shape="rect" href="class_peak.html#aca56ecdef2a852b2a34ee8d476b92ba1" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="541,283,760,309"/>
+<area shape="rect" href="tests_2main_8cpp.html#a39b5b5604ab614bb93b9471aac987fed" title=" " alt="" coords="603,333,698,360"/>
+<area shape="rect" href="class_slope.html#a7feb98241e01aa1922b87834127b4fbc" title="Konstruktor parametryczny." alt="" coords="323,165,425,192"/>
+<area shape="rect" href="class_plateau.html#a7d064f59405b401420fec900115ce970" title="Konstruktor parametryczny." alt="" coords="310,224,438,251"/>
+<area shape="rect" href="class_peak.html#ae4c9d2d8f74decab445058c861955505" title="Konstruktor parametryczny." alt="" coords="327,283,421,309"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af82e9a14c3ac06eec6bf717a6777cda2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af82e9a14c3ac06eec6bf717a6777cda2">&#9670;&nbsp;</a></span>TakeFilename_FinalSolid()</h2>
+<a id="afc48a4f98acc5647806f325e85490040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc48a4f98acc5647806f325e85490040">&#9670;&nbsp;</a></span>Take()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +316,7 @@ Oto graf wywoływań tej funkcji:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; Solid::TakeFilename_FinalSolid </td>
+          <td class="memname">virtual const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a>&amp; Solid::Take </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -292,29 +324,72 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00057">57</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<p>Implementuje <a class="el" href="class_scene_object.html#a685b1e10fbde359569abeb31b7dbc74b">SceneObject</a>.</p>
+
+<p>Reimplementowana w <a class="el" href="class_prism.html#a2ca5ee25b0baf05357aa981e6a79c729">Prism</a> i <a class="el" href="class_cuboid.html#ad28db551ea5a877b451c33bd0d0c5f9f">Cuboid</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00071">71</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+
+</div>
+</div>
+<a id="ad505305edd057147ccc6c0fb174996c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad505305edd057147ccc6c0fb174996c1">&#9670;&nbsp;</a></span>TakeFilename_FinalSolid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; Solid::TakeFilename_FinalSolid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementuje <a class="el" href="class_scene_object.html#a8bd62559cae37947f897e60628b9aef0">SceneObject</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00058">58</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_solid_af82e9a14c3ac06eec6bf717a6777cda2_icgraph.png" border="0" usemap="#class_solid_af82e9a14c3ac06eec6bf717a6777cda2_icgraph" alt=""/></div>
-<map name="class_solid_af82e9a14c3ac06eec6bf717a6777cda2_icgraph" id="class_solid_af82e9a14c3ac06eec6bf717a6777cda2_icgraph">
-<area shape="rect" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="917,159,1068,201"/>
-<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,65,869,92"/>
-<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,116,869,143"/>
-<area shape="rect" href="class_drone.html#af3224e3b7b4884460738fe192f2dac32" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="654,167,853,193"/>
-<area shape="rect" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="674,218,833,259"/>
-<area shape="rect" href="tests_2main_8cpp.html#af6fdfb2487172858945f18fe39a6b169" title=" " alt="" coords="706,284,801,311"/>
-<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,91,589,117"/>
-<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
-<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,60,133"/>
-<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
-<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
-<area shape="rect" href="class_scene.html#aec66a39d95ea31d35ddd310d29390f01" title="Metoda dodajaca drona do sceny." alt="" coords="410,208,543,235"/>
+<div class="center"><img src="class_solid_ad505305edd057147ccc6c0fb174996c1_icgraph.png" border="0" usemap="#class_solid_ad505305edd057147ccc6c0fb174996c1_icgraph" alt=""/></div>
+<map name="class_solid_ad505305edd057147ccc6c0fb174996c1_icgraph" id="class_solid_ad505305edd057147ccc6c0fb174996c1_icgraph">
+<area shape="rect" title="Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="1101,242,1252,283"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="822,31,1053,57"/>
+<area shape="rect" href="class_slope.html#a95ae71464931ec3dbfaa8a9cb79f6aee" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="826,132,1049,159"/>
+<area shape="rect" href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="859,183,1015,225"/>
+<area shape="rect" href="class_peak.html#aca56ecdef2a852b2a34ee8d476b92ba1" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="828,249,1047,276"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="821,81,1053,108"/>
+<area shape="rect" href="class_drone.html#af3224e3b7b4884460738fe192f2dac32" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="838,300,1037,327"/>
+<area shape="rect" href="class_drone.html#ab395282c1b097a4364ef561c4d195898" title="Metoda zwracajaca nazwe pliku ciala drona." alt="" coords="858,351,1017,393"/>
+<area shape="rect" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="858,417,1017,458"/>
+<area shape="rect" href="tests_2main_8cpp.html#af6fdfb2487172858945f18fe39a6b169" title=" " alt="" coords="890,483,985,509"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="548,56,773,83"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="297,5,495,32"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="292,56,500,83"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="301,107,491,133"/>
+<area shape="rect" href="class_slope.html#a7feb98241e01aa1922b87834127b4fbc" title="Konstruktor parametryczny." alt="" coords="609,132,712,159"/>
+<area shape="rect" href="class_plateau.html#a7d064f59405b401420fec900115ce970" title="Konstruktor parametryczny." alt="" coords="597,191,725,217"/>
+<area shape="rect" href="class_peak.html#ae4c9d2d8f74decab445058c861955505" title="Konstruktor parametryczny." alt="" coords="613,249,708,276"/>
+<area shape="rect" href="class_scene.html#acd95083dc8cbc1ff25a5397ca441b179" title="Metoda dodajaca pliki dronow do rysowania na scenie." alt="" coords="589,361,732,388"/>
+<area shape="rect" href="class_scene.html#a37b9b114b8927385bd6191495f296497" title="Metoda dodajaca drona do sceny." alt="" coords="329,336,463,363"/>
+<area shape="rect" href="class_scene.html#a7c922a7b7531f80859892aca469bd41c" title="Metoda dodajaca pliki do rysowania na scenie." alt="" coords="117,387,235,413"/>
+<area shape="rect" href="class_scene.html#a615217e0eb72a980d06ceb8e38ab456a" title="Metoda dodajaca objekt." alt="" coords="108,336,244,363"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,361,60,388"/>
 </map>
 </div>
 
@@ -343,21 +418,26 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00052">52</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00053">53</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_solid_a845f3e314cf6ed5f9125cac11382a43e_icgraph.png" border="0" usemap="#class_solid_a845f3e314cf6ed5f9125cac11382a43e_icgraph" alt=""/></div>
 <map name="class_solid_a845f3e314cf6ed5f9125cac11382a43e_icgraph" id="class_solid_a845f3e314cf6ed5f9125cac11382a43e_icgraph">
-<area shape="rect" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="917,99,1068,141"/>
-<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,56,869,83"/>
-<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,107,869,133"/>
-<area shape="rect" href="tests_2main_8cpp.html#af6fdfb2487172858945f18fe39a6b169" title=" " alt="" coords="706,157,801,184"/>
-<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
-<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
-<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
-<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
-<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
+<area shape="rect" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="815,154,965,195"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="535,31,766,57"/>
+<area shape="rect" href="class_slope.html#a95ae71464931ec3dbfaa8a9cb79f6aee" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="539,132,762,159"/>
+<area shape="rect" href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="573,183,729,225"/>
+<area shape="rect" href="class_peak.html#aca56ecdef2a852b2a34ee8d476b92ba1" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="541,249,760,276"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="535,81,767,108"/>
+<area shape="rect" href="tests_2main_8cpp.html#af6fdfb2487172858945f18fe39a6b169" title=" " alt="" coords="603,300,698,327"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="261,56,487,83"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="10,5,209,32"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="5,56,213,83"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="14,107,205,133"/>
+<area shape="rect" href="class_slope.html#a7feb98241e01aa1922b87834127b4fbc" title="Konstruktor parametryczny." alt="" coords="323,132,425,159"/>
+<area shape="rect" href="class_plateau.html#a7d064f59405b401420fec900115ce970" title="Konstruktor parametryczny." alt="" coords="310,191,438,217"/>
+<area shape="rect" href="class_peak.html#ae4c9d2d8f74decab445058c861955505" title="Konstruktor parametryczny." alt="" coords="327,249,421,276"/>
 </map>
 </div>
 
@@ -384,7 +464,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00034">34</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00035">35</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
 
 </div>
 </div>
@@ -408,7 +488,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00030">30</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00031">31</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
 
 </div>
 </div>
@@ -432,7 +512,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00038">38</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_geometric_solid_8hh_source.html#l00039">39</a> pliku <a class="el" href="_geometric_solid_8hh_source.html">GeometricSolid.hh</a>.</p>
 
 </div>
 </div>

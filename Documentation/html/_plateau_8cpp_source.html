@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DragonFly: Plik źródłowy Plateau.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_plateau_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plateau.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_plateau_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_plateau_8hh.html">Plateau.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_plateau.html#a07026170529dd928238ee45de0a797d7">    3</a></span>&#160;<a class="code" href="class_plateau.html#a07026170529dd928238ee45de0a797d7">Plateau::Plateau</a>():</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <a class="code" href="class_cuboid.html">Cuboid</a>(){</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;       <span class="comment">// ++number_of_peaks;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">unsigned int Peak::TakeNumber() const{</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    return number_of_peaks;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">   13</a></span>&#160;<a class="code" href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">Plateau::~Plateau</a>(){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//--number_of_peaks;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_plateau.html#a7d064f59405b401420fec900115ce970">   30</a></span>&#160;<a class="code" href="class_plateau.html#a07026170529dd928238ee45de0a797d7">Plateau::Plateau</a>(std::string File1, std::string File2, <span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a> &amp;V_scale, <span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a> &amp;V, <span class="keywordtype">double</span> angle):</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_cuboid.html">Cuboid</a>(File1,File2,V_scale,V,angle){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this-&gt;<a class="code" href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928">Count_Save_GlobalCoor</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928">   44</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928">Plateau::Count_Save_GlobalCoor</a>(){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_vector.html">Vector3D</a> tmp;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::ifstream File_Template(this-&gt;<a class="code" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e">TakeFilename_TemplateSolid</a>());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::ofstream File_Final(this-&gt;<a class="code" href="class_solid.html#ad505305edd057147ccc6c0fb174996c1">TakeFilename_FinalSolid</a>()); </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (!File_Template.is_open()) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::cerr &lt;&lt; std::endl</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; Blad otwarcia do odczytu pliku: &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e">TakeFilename_TemplateSolid</a>() &lt;&lt; std::endl</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (!File_Final.is_open()) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::cerr &lt;&lt; std::endl</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; Blad otwarcia do odczytu pliku: &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_solid.html#ad505305edd057147ccc6c0fb174996c1">TakeFilename_FinalSolid</a>() &lt;&lt; std::endl</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    File_Template &gt;&gt; tmp;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">while</span>(!File_Template.fail()){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VertexNumber = 0; VertexNumber &lt; 4;++VertexNumber){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            tmp = this-&gt;<a class="code" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">TranformToParentialCoordinate</a>(tmp);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            File_Final &lt;&lt; tmp &lt;&lt;std::endl;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            File_Template &gt;&gt; tmp;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            assert(VertexNumber ==3 || !File_Template.fail());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        File_Final &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> !File_Final.fail();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_plateau_html_a0e6ae72e4d7e9923f996c1247e6a6c8b"><div class="ttname"><a href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">Plateau::~Plateau</a></div><div class="ttdeci">~Plateau()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> <a href="_plateau_8cpp_source.html#l00013">Plateau.cpp:13</a></div></div>
+<div class="ttc" id="aclass_solid_html_ad505305edd057147ccc6c0fb174996c1"><div class="ttname"><a href="class_solid.html#ad505305edd057147ccc6c0fb174996c1">Solid::TakeFilename_FinalSolid</a></div><div class="ttdeci">virtual const std::string &amp; TakeFilename_FinalSolid() const override</div><div class="ttdoc">Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla.</div><div class="ttdef"><b>Definition:</b> <a href="_geometric_solid_8hh_source.html#l00058">GeometricSolid.hh:58</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_a08bc443badc04b38cb947ee573c534b9"><div class="ttname"><a href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">Cuboid::TranformToParentialCoordinate</a></div><div class="ttdeci">Vector3D TranformToParentialCoordinate(const Vector3D &amp;Vertex) const</div><div class="ttdoc">Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8cpp_source.html#l00020">Cuboid.cpp:20</a></div></div>
+<div class="ttc" id="a_plateau_8hh_html"><div class="ttname"><a href="_plateau_8hh.html">Plateau.hh</a></div></div>
+<div class="ttc" id="aclass_plateau_html_a3d7c1f4c6e688097aa7cb38e8f89d928"><div class="ttname"><a href="class_plateau.html#a3d7c1f4c6e688097aa7cb38e8f89d928">Plateau::Count_Save_GlobalCoor</a></div><div class="ttdeci">bool Count_Save_GlobalCoor()</div><div class="ttdoc">Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku.</div><div class="ttdef"><b>Definition:</b> <a href="_plateau_8cpp_source.html#l00044">Plateau.cpp:44</a></div></div>
+<div class="ttc" id="aclass_solid_html_a845f3e314cf6ed5f9125cac11382a43e"><div class="ttname"><a href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e">Solid::TakeFilename_TemplateSolid</a></div><div class="ttdeci">const std::string &amp; TakeFilename_TemplateSolid() const</div><div class="ttdoc">Metoda zwracajaca sciezke do pliku wzorcowego.</div><div class="ttdef"><b>Definition:</b> <a href="_geometric_solid_8hh_source.html#l00053">GeometricSolid.hh:53</a></div></div>
+<div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_plateau_html_a07026170529dd928238ee45de0a797d7"><div class="ttname"><a href="class_plateau.html#a07026170529dd928238ee45de0a797d7">Plateau::Plateau</a></div><div class="ttdeci">Plateau()</div><div class="ttdoc">Konstruktor bezparametryczny.</div><div class="ttdef"><b>Definition:</b> <a href="_plateau_8cpp_source.html#l00003">Plateau.cpp:3</a></div></div>
+<div class="ttc" id="aclass_cuboid_html"><div class="ttname"><a href="class_cuboid.html">Cuboid</a></div><div class="ttdoc">Klasa opisujaca prostopadloscian.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00025">Cuboid.hh:25</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_plateau_8cpp.html">Plateau.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

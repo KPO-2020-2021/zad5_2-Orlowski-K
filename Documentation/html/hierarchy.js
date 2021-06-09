@@ -12,7 +12,6 @@ var hierarchy =
     [ "doctest::ContextOptions", "structdoctest_1_1_context_options.html", null ],
     [ "doctest::CurrentTestCaseStats", "structdoctest_1_1_current_test_case_stats.html", null ],
     [ "doctest::detail::deferred_false< T >", "structdoctest_1_1detail_1_1deferred__false.html", null ],
-    [ "Drone", "class_drone.html", null ],
     [ "Dummy", "class_dummy.html", null ],
     [ "doctest::detail::enable_if< CONDITION, TYPE >", "structdoctest_1_1detail_1_1enable__if.html", null ],
     [ "doctest::detail::enable_if< true, TYPE >", "structdoctest_1_1detail_1_1enable__if_3_01true_00_01_t_y_p_e_01_4.html", null ],
@@ -44,9 +43,16 @@ var hierarchy =
     [ "doctest::detail::remove_reference< T && >", "structdoctest_1_1detail_1_1remove__reference_3_01_t_01_6_6_01_4.html", null ],
     [ "doctest::detail::Result", "structdoctest_1_1detail_1_1_result.html", null ],
     [ "Scene", "class_scene.html", null ],
-    [ "Solid", "class_solid.html", [
-      [ "Cuboid", "class_cuboid.html", null ],
-      [ "Prism", "class_prism.html", null ]
+    [ "SceneObject", "class_scene_object.html", [
+      [ "Drone", "class_drone.html", null ],
+      [ "Solid", "class_solid.html", [
+        [ "Cuboid", "class_cuboid.html", [
+          [ "Peak", "class_peak.html", null ],
+          [ "Plateau", "class_plateau.html", null ],
+          [ "Slope", "class_slope.html", null ]
+        ] ],
+        [ "Prism", "class_prism.html", null ]
+      ] ]
     ] ],
     [ "doctest::String", "classdoctest_1_1_string.html", null ],
     [ "doctest::StringMaker< R C::* >", "structdoctest_1_1_string_maker_3_01_r_01_c_1_1_5_01_4.html", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Dokumentacja pliku GeometricSolid.hh</title>
+<title>DragonFly: Dokumentacja pliku GeometricSolid.hh</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,9 +13,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,8 +23,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dragonfly
-   &#160;<span id="projectnumber">5.1</span>
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
    </div>
   </td>
  </tr>
@@ -36,18 +33,12 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.17 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Szukaj');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -68,20 +59,6 @@ $(document).ready(function(){initNavTree('_geometric_solid_8hh.html',''); initRe
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Komponenty</a>  </div>
@@ -95,21 +72,24 @@ $(document).ready(function(){initNavTree('_geometric_solid_8hh.html',''); initRe
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="_vector3_d_8hh_source.html">Vector3D.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_matrix3x3_8hh_source.html">Matrix3x3.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_object_8hh_source.html">SceneObject.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Wykres zależności załączania dla GeometricSolid.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="_geometric_solid_8hh__incl.png" border="0" usemap="#_geometric_solid_8hh" alt=""/></div>
 <map name="_geometric_solid_8hh" id="_geometric_solid_8hh">
-<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="281,5,424,32"/>
-<area shape="rect" title=" " alt="" coords="374,304,454,331"/>
-<area shape="rect" href="_vector3_d_8hh.html" title="Plik zawiera definicje klasy wektora 3D opartego na szablonie." alt="" coords="166,155,267,181"/>
-<area shape="rect" href="_matrix3x3_8hh.html" title="Plik zawiera definicje macierzy 3x3." alt="" coords="299,80,407,107"/>
-<area shape="rect" href="_vector_8hh.html" title="Ten plik zawiera definicję szablonu Vector&lt;&gt;" alt="" coords="178,229,261,256"/>
-<area shape="rect" title=" " alt="" coords="5,304,71,331"/>
-<area shape="rect" title=" " alt="" coords="95,304,157,331"/>
-<area shape="rect" title=" " alt="" coords="182,304,257,331"/>
-<area shape="rect" title=" " alt="" coords="281,304,350,331"/>
-<area shape="rect" href="_matrix_8hh.html" title="Plik zawierajacy definicje szablonu Matrix&lt;&gt;" alt="" coords="292,155,376,181"/>
+<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="79,5,222,32"/>
+<area shape="rect" title=" " alt="" coords="5,304,85,331"/>
+<area shape="rect" href="_vector3_d_8hh.html" title="Plik zawiera definicje klasy wektora 3D opartego na szablonie." alt="" coords="192,155,293,181"/>
+<area shape="rect" href="_matrix3x3_8hh.html" title="Plik zawiera definicje macierzy 3x3." alt="" coords="51,80,159,107"/>
+<area shape="rect" href="_scene_object_8hh.html" title=" " alt="" coords="235,80,357,107"/>
+<area shape="rect" href="_vector_8hh.html" title="Ten plik zawiera definicję szablonu Vector&lt;&gt;" alt="" coords="189,229,272,256"/>
+<area shape="rect" title=" " alt="" coords="110,304,175,331"/>
+<area shape="rect" title=" " alt="" coords="199,304,262,331"/>
+<area shape="rect" title=" " alt="" coords="287,304,361,331"/>
+<area shape="rect" title=" " alt="" coords="385,304,455,331"/>
+<area shape="rect" href="_matrix_8hh.html" title="Plik zawierajacy definicje szablonu Matrix&lt;&gt;" alt="" coords="83,155,167,181"/>
+<area shape="rect" title=" " alt="" coords="317,155,395,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -117,18 +97,24 @@ Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten 
 <div class="dyncontent">
 <div class="center"><img src="_geometric_solid_8hh__dep__incl.png" border="0" usemap="#_geometric_solid_8hhdep" alt=""/></div>
 <map name="_geometric_solid_8hhdep" id="_geometric_solid_8hhdep">
-<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="178,5,321,32"/>
-<area shape="rect" href="_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="95,80,182,107"/>
-<area shape="rect" href="_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="206,80,293,107"/>
-<area shape="rect" href="_geometric_solid_8cpp.html" title=" " alt="" coords="317,80,467,107"/>
-<area shape="rect" href="_drone_8hh.html" title="Klasa opisujaca drona." alt="" coords="154,155,235,181"/>
-<area shape="rect" href="_cuboid_8cpp.html" title=" " alt="" coords="35,155,130,181"/>
-<area shape="rect" href="app_2main_8cpp.html" title=" " alt="" coords="5,304,88,331"/>
-<area shape="rect" href="_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="115,229,197,256"/>
-<area shape="rect" href="tests_2main_8cpp.html" title=" " alt="" coords="224,304,307,331"/>
-<area shape="rect" href="_drone_8cpp.html" title=" " alt="" coords="272,229,360,256"/>
-<area shape="rect" href="_scene_8cpp.html" title=" " alt="" coords="112,304,200,331"/>
-<area shape="rect" href="_prism6_8cpp.html" title=" " alt="" coords="259,155,354,181"/>
+<area shape="rect" title="Klasa opisujaca bryle geometryczna." alt="" coords="286,5,429,32"/>
+<area shape="rect" href="_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="314,80,401,107"/>
+<area shape="rect" href="_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="171,80,258,107"/>
+<area shape="rect" href="_geometric_solid_8cpp.html" title=" " alt="" coords="425,80,575,107"/>
+<area shape="rect" href="_drone_8hh.html" title="Klasa opisujaca drona." alt="" coords="174,155,255,181"/>
+<area shape="rect" href="_peak_8hh.html" title=" " alt="" coords="432,229,507,256"/>
+<area shape="rect" href="_plateau_8hh.html" title=" " alt="" coords="531,229,621,256"/>
+<area shape="rect" href="_slope_8hh.html" title=" " alt="" coords="278,229,357,256"/>
+<area shape="rect" href="_cuboid_8cpp.html" title=" " alt="" coords="337,155,431,181"/>
+<area shape="rect" href="app_2main_8cpp.html" title=" " alt="" coords="353,304,436,331"/>
+<area shape="rect" href="_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="9,229,90,256"/>
+<area shape="rect" href="tests_2main_8cpp.html" title=" " alt="" coords="247,304,329,331"/>
+<area shape="rect" href="_drone_8cpp.html" title=" " alt="" coords="165,229,253,256"/>
+<area shape="rect" href="_scene_8cpp.html" title=" " alt="" coords="5,304,93,331"/>
+<area shape="rect" href="_peak_8cpp.html" title=" " alt="" coords="461,304,542,331"/>
+<area shape="rect" href="_plateau_8cpp.html" title=" " alt="" coords="567,304,665,331"/>
+<area shape="rect" href="_slope_8cpp.html" title=" " alt="" coords="137,304,223,331"/>
+<area shape="rect" href="_prism6_8cpp.html" title=" " alt="" coords="55,155,150,181"/>
 </map>
 </div>
 </div>

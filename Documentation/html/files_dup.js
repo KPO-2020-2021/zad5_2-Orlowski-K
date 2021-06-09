@@ -37,11 +37,26 @@ var files_dup =
     [ "Matrix3x3.cpp", "_matrix3x3_8cpp.html", "_matrix3x3_8cpp" ],
     [ "Matrix3x3.hh", "_matrix3x3_8hh.html", "_matrix3x3_8hh" ],
     [ "mpi_reporter.h", "mpi__reporter_8h.html", "mpi__reporter_8h" ],
+    [ "Peak.cpp", "_peak_8cpp.html", null ],
+    [ "Peak.hh", "_peak_8hh.html", [
+      [ "Peak", "class_peak.html", "class_peak" ]
+    ] ],
+    [ "Plateau.cpp", "_plateau_8cpp.html", null ],
+    [ "Plateau.hh", "_plateau_8hh.html", [
+      [ "Plateau", "class_plateau.html", "class_plateau" ]
+    ] ],
     [ "Prism6.cpp", "_prism6_8cpp.html", null ],
     [ "Prism6.hh", "_prism6_8hh.html", "_prism6_8hh" ],
     [ "Scene.cpp", "_scene_8cpp.html", null ],
     [ "Scene.hh", "_scene_8hh.html", [
       [ "Scene", "class_scene.html", "class_scene" ]
+    ] ],
+    [ "SceneObject.hh", "_scene_object_8hh.html", [
+      [ "SceneObject", "class_scene_object.html", "class_scene_object" ]
+    ] ],
+    [ "Slope.cpp", "_slope_8cpp.html", null ],
+    [ "Slope.hh", "_slope_8hh.html", [
+      [ "Slope", "class_slope.html", "class_slope" ]
     ] ],
     [ "Vector.hh", "_vector_8hh.html", "_vector_8hh" ],
     [ "Vector3D.cpp", "_vector3_d_8cpp.html", null ],

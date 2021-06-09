@@ -1,0 +1,8 @@
+<map id="Plateau::Count_Save_GlobalCoor" name="Plateau::Count_Save_GlobalCoor">
+<area shape="rect" id="node1" title="Metoda znieksztalcajaca prostopadloscian i zapisujaca dane do pliku." alt="" coords="5,71,161,112"/>
+<area shape="rect" id="node2" href="$class_solid.html#ad505305edd057147ccc6c0fb174996c1" title="Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="236,5,387,47"/>
+<area shape="rect" id="node3" href="$class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="236,71,387,112"/>
+<area shape="rect" id="node4" href="$class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="209,136,413,177"/>
+<area shape="rect" id="node5" href="$_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="461,118,583,145"/>
+<area shape="rect" id="node6" href="$class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="473,169,571,195"/>
+</map>

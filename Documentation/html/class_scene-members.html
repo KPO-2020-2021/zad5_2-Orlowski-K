@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Lista składowych</title>
+<title>DragonFly: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,9 +13,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,8 +23,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dragonfly
-   &#160;<span id="projectnumber">5.1</span>
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
    </div>
   </td>
  </tr>
@@ -36,18 +33,12 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.17 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Szukaj');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -68,20 +59,6 @@ $(document).ready(function(){initNavTree('class_scene.html',''); initResizable()
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="headertitle">
 <div class="title">Scene Lista składowych</div>  </div>
@@ -91,17 +68,22 @@ $(document).ready(function(){initNavTree('class_scene.html',''); initResizable()
 <p>To jest kompletna lista składowych dla <a class="el" href="class_scene.html">Scene</a>, uwzględniająca wszystkie dziedziczone składowe.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_scene.html#acf984e93dde62f0a5998a754f1dc69cd">Active</a></td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_scene.html#aec66a39d95ea31d35ddd310d29390f01">AddDrone</a>(Drone &amp;NewDrone)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#ab2e34ae305cb139aa38c804289d18383">CreateSurface</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_scene.html#affb48f818cd9be51ba2f9e4981e6397b">Drones</a></td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#a37b9b114b8927385bd6191495f296497">AddDrone</a>(std::shared_ptr&lt; Drone &gt; NewDrone)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#a615217e0eb72a980d06ceb8e38ab456a">AddObject</a>(std::shared_ptr&lt; SceneObject &gt; NewObject)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#a602f0f2f1e45f198ccdeed90f0b67549">DeleteObject</a>(const unsigned int &amp;number_of_element)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#acd95083dc8cbc1ff25a5397ca441b179">DrawDrone</a>(std::shared_ptr&lt; Drone &gt; Drone)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#ac1b3db92fafcd11ddd246624157e34bc">Drones</a></td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_scene.html#aa8a50f5cf3a97abcaf76fc21d411fe97">Filename_Surface</a></td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_scene.html#a996fcf89e0506b5c62ff70e5d0cbfbde">Link</a></td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#ada356092622d12a943d252082d31de1d">Objects</a></td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#a7c922a7b7531f80859892aca469bd41c">Redraw</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_scene.html#ad10176d75a9cc0da56626f682d083507">Scene</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_scene.html#aba064da2865c684dc96dc9f1c4b4748e">Scene</a>(std::vector&lt; Drone * &gt; &amp;DroneContener, std::string Filename, PzG::LaczeDoGNUPlota &amp;Link_2)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#a7e5cdf9909419118b88afa79996beeb5">SwitchActiveDrone</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_scene.html#a3372e8e86c294b54d1bafe804feff860">TakeActiveDrone</a>() const</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#a19973b85b9f521211e7e4f549e88d239">TakeFilename_Surface</a>() const</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_scene.html#a4e36128095df6535dc6f3ffa5e3413cd">UseActiveDrone</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#a13622519b25046aa30ec4a6c8e097c1f">Scene</a>(std::vector&lt; std::shared_ptr&lt; Drone &gt;&gt; &amp;DroneContener, std::list&lt; std::shared_ptr&lt; SceneObject &gt;&gt; &amp;ObjectList, std::string Filename, PzG::LaczeDoGNUPlota &amp;Link_2)</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#a413d81082ae3fbecaa1cc933cf807cfb">ShowList</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#a7e5cdf9909419118b88afa79996beeb5">SwitchActiveDrone</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#a8c6104d51a68ddc1d9dd5a83d9050f62">TakeActiveDrone</a>() const</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_scene.html#a19973b85b9f521211e7e4f549e88d239">TakeFilename_Surface</a>() const</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_scene.html#a9ff454cb36085c652377ae8b2c5abb3c">UseActiveDrone</a>()</td><td class="entry"><a class="el" href="class_scene.html">Scene</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Lista składowych</title>
+<title>DragonFly: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,9 +13,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,8 +23,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dragonfly
-   &#160;<span id="projectnumber">5.1</span>
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
    </div>
   </td>
  </tr>
@@ -36,18 +33,12 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.17 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Szukaj');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -68,20 +59,6 @@ $(document).ready(function(){initNavTree('class_drone.html',''); initResizable()
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="headertitle">
 <div class="title">Drone Lista składowych</div>  </div>
@@ -101,15 +78,18 @@ $(document).ready(function(){initNavTree('class_drone.html',''); initResizable()
   <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646">MakeHorizontalFlight</a>(double FlightLen, PzG::LaczeDoGNUPlota &amp;Link)</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_drone.html#ae2019bec61b97f7a2af8399047c61511">MakeTrack</a>(double rotation_angle, double FlightLen, std::vector&lt; Vector3D &gt; &amp;TracePoints) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1">MakeVerticalFlight</a>(double FlightLen, PzG::LaczeDoGNUPlota &amp;Link)</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_drone.html#acf7f25d579bbf007d2d54803881ed8ad">operator[]</a>(unsigned int Ind) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a46c6cbb730ff47044f303de717e3d05e">OrientAngle</a></td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_drone.html#ae650de6ac148a48210ad7dcdf2e74c10">Rotor</a></td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a4a24aab74b030c2fbc9d48d42c7767ce">Series</a></td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_drone.html#a3a38ec42e5e42a1741e36c26d2fb7cf5">ObjectType</a>() const override</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#acf7f25d579bbf007d2d54803881ed8ad">operator[]</a>(unsigned int Ind) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_drone.html#a46c6cbb730ff47044f303de717e3d05e">OrientAngle</a></td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#ae650de6ac148a48210ad7dcdf2e74c10">Rotor</a></td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_drone.html#a4a24aab74b030c2fbc9d48d42c7767ce">Series</a></td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#adc64d6eddfd094277aaf5817e9df24b7">Take</a>() const override</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_drone.html#af3224e3b7b4884460738fe192f2dac32">TakeFilename_Body</a>() const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd">TakeFilename_Rotor</a>(const Prism &amp;Rotor) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_drone.html#a1ab7730fbaa3885224e0989851a549cb">TakeLayout</a>() const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a04e3e7a5e261758da510d87a1aea637c">TakeOrient</a>() const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06">TransformToParentialCoordinate</a>(const Vector3D &amp;Vertex) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#ab395282c1b097a4364ef561c4d195898">TakeFilename_FinalSolid</a>() const override</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd">TakeFilename_Rotor</a>(const Prism &amp;Rotor) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a1ab7730fbaa3885224e0989851a549cb">TakeLayout</a>() const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_drone.html#a04e3e7a5e261758da510d87a1aea637c">TakeOrient</a>() const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06">TransformToParentialCoordinate</a>(const Vector3D &amp;Vertex) const</td><td class="entry"><a class="el" href="class_drone.html">Drone</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

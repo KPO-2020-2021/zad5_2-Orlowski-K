@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Dokumentacja pliku main.cpp</title>
+<title>DragonFly: Dokumentacja pliku main.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,9 +13,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,8 +23,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dragonfly
-   &#160;<span id="projectnumber">5.1</span>
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
    </div>
   </td>
  </tr>
@@ -36,18 +33,12 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.17 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Szukaj');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -68,20 +59,6 @@ $(document).ready(function(){initNavTree('app_2main_8cpp.html',''); initResizabl
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#define-members">Definicje</a> &#124;
@@ -95,42 +72,52 @@ $(document).ready(function(){initNavTree('app_2main_8cpp.html',''); initResizabl
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="example_config_8h_source.html">exampleConfig.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="example_8h_source.html">example.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vector3_d_8hh_source.html">Vector3D.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_matrix3x3_8hh_source.html">Matrix3x3.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_drone_8hh_source.html">Drone.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_8hh_source.html">Scene.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_object_8hh_source.html">SceneObject.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_peak_8hh_source.html">Peak.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_slope_8hh_source.html">Slope.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_plateau_8hh_source.html">Plateau.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="lacze__do__gnuplota_8hh_source.html">../inc/lacze_do_gnuplota.hh</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Wykres zależności załączania dla app/main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="app_2main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" title=" " alt="" coords="416,5,499,32"/>
-<area shape="rect" title=" " alt="" coords="427,603,507,629"/>
-<area shape="rect" title=" " alt="" coords="5,603,80,629"/>
-<area shape="rect" title=" " alt="" coords="126,80,197,107"/>
-<area shape="rect" title=" " alt="" coords="249,229,322,256"/>
-<area shape="rect" title=" " alt="" coords="909,304,968,331"/>
-<area shape="rect" href="example_config_8h.html" title=" " alt="" coords="323,80,455,107"/>
-<area shape="rect" href="example_8h.html" title=" " alt="" coords="480,80,571,107"/>
-<area shape="rect" href="_vector3_d_8hh.html" title="Plik zawiera definicje klasy wektora 3D opartego na szablonie." alt="" coords="200,379,301,405"/>
-<area shape="rect" href="_matrix3x3_8hh.html" title="Plik zawiera definicje macierzy 3x3." alt="" coords="326,379,434,405"/>
-<area shape="rect" href="_drone_8hh.html" title="Klasa opisujaca drona." alt="" coords="595,155,677,181"/>
-<area shape="rect" href="lacze__do__gnuplota_8hh.html" title=" " alt="" coords="768,229,931,256"/>
-<area shape="rect" href="_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="595,80,677,107"/>
-<area shape="rect" href="_vector_8hh.html" title="Ten plik zawiera definicję szablonu Vector&lt;&gt;" alt="" coords="220,528,303,555"/>
-<area shape="rect" title=" " alt="" coords="321,603,386,629"/>
-<area shape="rect" title=" " alt="" coords="139,603,202,629"/>
-<area shape="rect" title=" " alt="" coords="227,603,296,629"/>
-<area shape="rect" href="_matrix_8hh.html" title="Plik zawierajacy definicje szablonu Matrix&lt;&gt;" alt="" coords="299,453,383,480"/>
-<area shape="rect" href="_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="346,229,433,256"/>
-<area shape="rect" href="_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="457,229,543,256"/>
-<area shape="rect" title=" " alt="" coords="719,304,782,331"/>
-<area shape="rect" title=" " alt="" coords="619,229,693,256"/>
-<area shape="rect" href="_geometric_solid_8hh.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="318,304,461,331"/>
-<area shape="rect" title=" " alt="" coords="828,304,871,331"/>
+<area shape="rect" title=" " alt="" coords="585,5,668,32"/>
+<area shape="rect" title=" " alt="" coords="801,603,881,629"/>
+<area shape="rect" title=" " alt="" coords="180,603,255,629"/>
+<area shape="rect" title=" " alt="" coords="94,80,165,107"/>
+<area shape="rect" title=" " alt="" coords="289,229,362,256"/>
+<area shape="rect" title=" " alt="" coords="1103,304,1161,331"/>
+<area shape="rect" title=" " alt="" coords="253,453,331,480"/>
+<area shape="rect" href="example_config_8h.html" title=" " alt="" coords="342,80,474,107"/>
+<area shape="rect" href="example_8h.html" title=" " alt="" coords="499,80,589,107"/>
+<area shape="rect" href="_vector3_d_8hh.html" title="Plik zawiera definicje klasy wektora 3D opartego na szablonie." alt="" coords="564,453,665,480"/>
+<area shape="rect" href="_matrix3x3_8hh.html" title="Plik zawiera definicje macierzy 3x3." alt="" coords="877,379,985,405"/>
+<area shape="rect" href="_drone_8hh.html" title="Klasa opisujaca drona." alt="" coords="709,155,790,181"/>
+<area shape="rect" href="_scene_object_8hh.html" title=" " alt="" coords="452,379,575,405"/>
+<area shape="rect" href="lacze__do__gnuplota_8hh.html" title=" " alt="" coords="961,229,1124,256"/>
+<area shape="rect" href="_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="715,80,797,107"/>
+<area shape="rect" href="_peak_8hh.html" title=" " alt="" coords="291,155,365,181"/>
+<area shape="rect" href="_slope_8hh.html" title=" " alt="" coords="390,155,469,181"/>
+<area shape="rect" href="_plateau_8hh.html" title=" " alt="" coords="493,155,584,181"/>
+<area shape="rect" href="_vector_8hh.html" title="Ten plik zawiera definicję szablonu Vector&lt;&gt;" alt="" coords="579,528,661,555"/>
+<area shape="rect" title=" " alt="" coords="587,603,653,629"/>
+<area shape="rect" title=" " alt="" coords="677,603,739,629"/>
+<area shape="rect" title=" " alt="" coords="493,603,563,629"/>
+<area shape="rect" href="_matrix_8hh.html" title="Plik zawierajacy definicje szablonu Matrix&lt;&gt;" alt="" coords="842,453,926,480"/>
+<area shape="rect" href="_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="698,229,785,256"/>
+<area shape="rect" href="_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="386,229,473,256"/>
+<area shape="rect" title=" " alt="" coords="842,304,905,331"/>
+<area shape="rect" title=" " alt="" coords="599,229,673,256"/>
+<area shape="rect" href="_geometric_solid_8hh.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="611,304,754,331"/>
+<area shape="rect" title=" " alt="" coords="1021,304,1064,331"/>
 </map>
 </div>
 </div>
@@ -140,6 +127,8 @@ Wykres zależności załączania dla app/main.cpp:</div>
 Definicje</h2></td></tr>
 <tr class="memitem:a5ec2e414545e7c2a2f3ebe4c93600b76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_2main_8cpp.html#a5ec2e414545e7c2a2f3ebe4c93600b76">SURFACE</a>&#160;&#160;&#160;&quot;../datasets/templates/surface.dat&quot;</td></tr>
 <tr class="separator:a5ec2e414545e7c2a2f3ebe4c93600b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eedbb63fdfadadb12e7c5bdd78112f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_2main_8cpp.html#a6eedbb63fdfadadb12e7c5bdd78112f7">FILE_OBSTACLE</a>&#160;&#160;&#160;&quot;../datasets/templates/obstacle.dat&quot;</td></tr>
+<tr class="separator:a6eedbb63fdfadadb12e7c5bdd78112f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a706049f5bf44fe6cca177e20b85f544b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_2main_8cpp.html#a706049f5bf44fe6cca177e20b85f544b">FLIGHTHEIHGT</a>&#160;&#160;&#160;80</td></tr>
 <tr class="separator:a706049f5bf44fe6cca177e20b85f544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -149,6 +138,22 @@ Funkcje</h2></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a6eedbb63fdfadadb12e7c5bdd78112f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eedbb63fdfadadb12e7c5bdd78112f7">&#9670;&nbsp;</a></span>FILE_OBSTACLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_OBSTACLE&#160;&#160;&#160;&quot;../datasets/templates/obstacle.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00029">29</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a706049f5bf44fe6cca177e20b85f544b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a706049f5bf44fe6cca177e20b85f544b">&#9670;&nbsp;</a></span>FLIGHTHEIHGT</h2>
 
@@ -161,7 +166,7 @@ Funkcje</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00024">24</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00030">30</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +182,7 @@ Funkcje</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00023">23</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00028">28</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
 
 </div>
 </div>
@@ -197,51 +202,40 @@ Funkcje</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00027">27</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="app_2main_8cpp_source.html#l00033">33</a> pliku <a class="el" href="app_2main_8cpp_source.html">app/main.cpp</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,587,60,613"/>
-<area shape="rect" href="class_scene.html#aec66a39d95ea31d35ddd310d29390f01" title="Metoda dodajaca drona do sceny." alt="" coords="145,107,279,133"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="390,33,563,74"/>
-<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,208,311,235"/>
-<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,251,589,277"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="390,302,563,343"/>
-<area shape="rect" href="class_scene.html#ab2e34ae305cb139aa38c804289d18383" title="Metoda rysujaca plaszczyzne." alt="" coords="131,5,293,32"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot." alt="" coords="125,411,299,453"/>
-<area shape="rect" href="class_drone.html#a19841dac503045c41403930c6b83f668" title="Metoda tworzaca drona." alt="" coords="141,477,283,504"/>
-<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,259,316,285"/>
-<area shape="rect" href="class_drone.html#ae2019bec61b97f7a2af8399047c61511" title="Metoda tworzaca trase przelotu." alt="" coords="143,528,281,555"/>
-<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,309,307,336"/>
-<area shape="rect" href="class_vector.html#a9a1423efba75a53a1fd4c60d91675aed" title=" " alt="" coords="136,579,288,621"/>
-<area shape="rect" href="class_vector.html#a6c353ceee6813ea6af1276c41a7e26d4" title=" " alt="" coords="121,645,303,672"/>
-<area shape="rect" href="class_scene.html#a7e5cdf9909419118b88afa79996beeb5" title="Metoda zmieniajaca aktualnie wybranego drona." alt="" coords="116,696,308,723"/>
-<area shape="rect" href="class_scene.html#a3372e8e86c294b54d1bafe804feff860" title="Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu." alt="" coords="123,747,301,773"/>
-<area shape="rect" href="class_drone.html#a1ab7730fbaa3885224e0989851a549cb" title="Metoda udostepniajaca wektor polozenia drona." alt="" coords="141,797,283,824"/>
-<area shape="rect" href="class_scene.html#a4e36128095df6535dc6f3ffa5e3413cd" title="Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji." alt="" coords="125,848,299,875"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="125,899,299,941"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef" title="Ustawia zakres osi OX." alt="" coords="125,965,299,1006"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c" title="Ustawia zakres osi OY." alt="" coords="125,1030,299,1071"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3" title="Ustawia zakres osi OZ." alt="" coords="125,1095,299,1137"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407" title="Usuwa ostatnią nazwę pliku." alt="" coords="125,1161,299,1202"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania." alt="" coords="125,1226,299,1267"/>
-<area shape="rect" href="class_drone.html#af3224e3b7b4884460738fe192f2dac32" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="654,156,853,183"/>
-<area shape="rect" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="674,90,833,131"/>
-<area shape="rect" href="namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title=" " alt="" coords="690,39,817,65"/>
-<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="945,105,1095,146"/>
-<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,207,869,233"/>
-<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,257,869,284"/>
-<area shape="rect" href="class_prism.html#a6d449146f3102b350c658e088ea8fe69" title="Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly." alt="" coords="698,308,809,335"/>
-<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="945,301,1095,342"/>
-<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="918,170,1122,211"/>
-<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="917,235,1123,277"/>
-<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="1171,243,1292,269"/>
-<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="1183,333,1280,360"/>
-<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="922,366,1118,407"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56" title="Ustawia rotację wokół osi OX." alt="" coords="390,933,563,974"/>
-<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1" title="Ustawia rotację wokół osi OZ." alt="" coords="390,867,563,909"/>
+<area shape="rect" title=" " alt="" coords="5,543,60,570"/>
+<area shape="rect" href="class_scene.html#a615217e0eb72a980d06ceb8e38ab456a" title="Metoda dodajaca objekt." alt="" coords="136,118,272,145"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="846,107,1019,148"/>
+<area shape="rect" href="class_scene.html#a602f0f2f1e45f198ccdeed90f0b67549" title="Metoda dodajaca usuwajaca." alt="" coords="127,219,281,246"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot." alt="" coords="117,271,291,312"/>
+<area shape="rect" href="class_scene.html#a7c922a7b7531f80859892aca469bd41c" title="Metoda dodajaca pliki do rysowania na scenie." alt="" coords="375,194,494,221"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="117,336,291,377"/>
+<area shape="rect" href="class_vector.html#a9a1423efba75a53a1fd4c60d91675aed" title=" " alt="" coords="128,401,280,443"/>
+<area shape="rect" href="class_vector.html#a6c353ceee6813ea6af1276c41a7e26d4" title=" " alt="" coords="113,467,295,494"/>
+<area shape="rect" href="class_scene.html#a413d81082ae3fbecaa1cc933cf807cfb" title="Metoda wyswietlajaca liste obiektow sceny." alt="" coords="141,518,267,545"/>
+<area shape="rect" href="class_scene.html#a7e5cdf9909419118b88afa79996beeb5" title="Metoda zmieniajaca aktualnie wybranego drona." alt="" coords="108,569,300,595"/>
+<area shape="rect" href="class_scene.html#a8c6104d51a68ddc1d9dd5a83d9050f62" title="Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu." alt="" coords="115,619,293,646"/>
+<area shape="rect" href="class_scene.html#a9ff454cb36085c652377ae8b2c5abb3c" title="Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji." alt="" coords="117,670,291,697"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="117,721,291,763"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef" title="Ustawia zakres osi OX." alt="" coords="117,787,291,828"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c" title="Ustawia zakres osi OY." alt="" coords="117,852,291,893"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3" title="Ustawia zakres osi OZ." alt="" coords="117,917,291,959"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407" title="Usuwa ostatnią nazwę pliku." alt="" coords="117,983,291,1024"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania." alt="" coords="117,1048,291,1089"/>
+<area shape="rect" href="class_scene.html#a37b9b114b8927385bd6191495f296497" title="Metoda dodajaca drona do sceny." alt="" coords="368,143,501,170"/>
+<area shape="rect" href="class_scene.html#acd95083dc8cbc1ff25a5397ca441b179" title="Metoda dodajaca pliki dronow do rysowania na scenie." alt="" coords="606,194,749,221"/>
+<area shape="rect" href="class_drone.html#af3224e3b7b4884460738fe192f2dac32" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="833,173,1032,199"/>
+<area shape="rect" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="853,224,1012,265"/>
+<area shape="rect" href="namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title=" " alt="" coords="1092,114,1219,141"/>
+<area shape="rect" href="class_solid.html#ad505305edd057147ccc6c0fb174996c1" title="Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="1080,195,1231,236"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a89a1d90d017d264cd26398464d074073" title="Kasuje zawartość listy nazw plików." alt="" coords="569,245,785,287"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56" title="Ustawia rotację wokół osi OX." alt="" coords="348,689,521,731"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1" title="Ustawia rotację wokół osi OZ." alt="" coords="348,755,521,796"/>
 </map>
 </div>
 

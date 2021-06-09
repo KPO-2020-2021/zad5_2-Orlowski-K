@@ -1,0 +1,6 @@
+<map id="Slope" name="Slope">
+<area shape="rect" id="node1" title=" " alt="" coords="27,229,86,256"/>
+<area shape="rect" id="node2" href="$class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="23,155,90,181"/>
+<area shape="rect" id="node3" href="$class_solid.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="29,80,84,107"/>
+<area shape="rect" id="node4" href="$class_scene_object.html" title=" " alt="" coords="5,5,108,32"/>
+</map>

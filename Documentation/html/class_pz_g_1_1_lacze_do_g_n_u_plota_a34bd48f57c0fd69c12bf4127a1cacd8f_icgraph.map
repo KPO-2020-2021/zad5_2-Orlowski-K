@@ -1,6 +1,8 @@
 <map id="PzG::LaczeDoGNUPlota::DodajNazwePliku" name="PzG::LaczeDoGNUPlota::DodajNazwePliku">
-<area shape="rect" id="node1" title="Dodaje nazwę pliku." alt="" coords="317,49,491,90"/>
-<area shape="rect" id="node2" href="$class_scene.html#aec66a39d95ea31d35ddd310d29390f01" title="Metoda dodajaca drona do sceny." alt="" coords="122,5,255,32"/>
-<area shape="rect" id="node3" href="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,60,83"/>
-<area shape="rect" id="node4" href="$class_scene.html#ab2e34ae305cb139aa38c804289d18383" title="Metoda rysujaca plaszczyzne." alt="" coords="108,107,269,133"/>
+<area shape="rect" id="node1" title="Dodaje nazwę pliku." alt="" coords="664,41,837,83"/>
+<area shape="rect" id="node2" href="$class_scene.html#a615217e0eb72a980d06ceb8e38ab456a" title="Metoda dodajaca objekt." alt="" coords="108,35,244,62"/>
+<area shape="rect" id="node3" href="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,35,60,62"/>
+<area shape="rect" id="node4" href="$class_scene.html#acd95083dc8cbc1ff25a5397ca441b179" title="Metoda dodajaca pliki dronow do rysowania na scenie." alt="" coords="473,74,616,101"/>
+<area shape="rect" id="node6" href="$class_scene.html#a7c922a7b7531f80859892aca469bd41c" title="Metoda dodajaca pliki do rysowania na scenie." alt="" coords="299,125,418,151"/>
+<area shape="rect" id="node5" href="$class_scene.html#a37b9b114b8927385bd6191495f296497" title="Metoda dodajaca drona do sceny." alt="" coords="292,74,425,101"/>
 </map>

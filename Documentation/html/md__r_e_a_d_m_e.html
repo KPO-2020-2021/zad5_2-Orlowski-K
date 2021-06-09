@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Faza 1</title>
+<title>DragonFly: Faza 2</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,9 +13,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,8 +23,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dragonfly
-   &#160;<span id="projectnumber">5.1</span>
+   <div id="projectname">DragonFly
+   &#160;<span id="projectnumber">5.2</span>
    </div>
   </td>
  </tr>
@@ -36,18 +33,12 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.17 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Szukaj');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Szukaj');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -68,38 +59,32 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Faza 1 </div>  </div>
+<div class="title">Faza 2 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Program poprawnie rysuje scene i drony.</p>
+<div class="textblock"><p>Rozbudowano klasy i dziedziczenie o metody wirtualne i nowe klasy</p>
+<p>Program korzysta ze wskaznikow wspoldzielonych</p>
+<p>Do sceny moga byc dodawane i usuwane Obiekty Sseny</p>
+<p>Wygenerowano nowa dokumentacje</p>
+<p>Wszystkie wczesniejsze operacje nadal dzialaja</p>
+<p>Nazwa pliku wynikowego ./main</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Faza 1</h1>
+<p>Program poprawnie rysuje scene i drony.</p>
 <p>Wykonanie obiektowe z dziedziczeniem.</p>
 <p>Animacja lotu jednego z dronow. Mozliwy lot po oktagonie (modyfikacja). Program zlicza uzywane i usuwane wektory. Pliki tekstowe wzorcowe i robocze znajduja sie w katalogu datasets w odpowiedznich lokalizacjach.</p>
 <p>Kazdy dron jest opisany 12 wektorami (polozenie w ukladach lokalnych i globalnych bryl i drona, wektor skalowania w klasie bazowej).</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Uruchamianie programu i testy</h1>
 <p>W celu uruchomienia programu nalezy wejsc w katalog build i uruchomimc program ./main W tym samym katalogu polecenie make kompiluje program.</p>
 <p>Testy mozna przeprowadzic za pomoca polecen: -make test (Testy ogolne) ./unit_tests -s (Testy jednostkowe)</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Dokumentacja</h1>
 <p>Dokumentacja wygenerowana przy pomocy Doxygen'a znajduje sie w katalogu /Documentation. W katalogu znajduje sie skrot do strony HTML o nazwie index.html W celu otworzenia dokumentacji nalezy uruchomic skrot lub przeszukac katalog /html.</p>
 <p>W razie problemow pliki graficzne diagramow znajduja sie w folderze images. Pliki z diagramami w programie Dia znajduja sie w /Documentation/dia/.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Building</h1>
 <p>Build by making a build directory (i.e. <code>build/</code>), run <code>cmake</code> in that dir, and then use <code>make</code> to build the desired target.</p>
 <p>Requirements: cmake, gnuplot, doxygen + dot (in graphviz library)</p>
@@ -144,7 +129,7 @@ Building</h1>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="aapp_2main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="app_2main_8cpp_source.html#l00027">app/main.cpp:27</a></div></div>
+<div class="ttc" id="aapp_2main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="app_2main_8cpp_source.html#l00033">app/main.cpp:33</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
