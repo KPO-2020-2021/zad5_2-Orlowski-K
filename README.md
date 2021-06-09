@@ -1,3 +1,16 @@
+## Faza 2
+Rozbudowano klasy i dziedziczenie o metody wirtualne i nowe klasy
+
+Program korzysta ze wskaznikow wspoldzielonych
+
+Do sceny moga byc dodawane i usuwane Obiekty Sseny
+
+Wygenerowano nowa dokumentacje
+
+Wszystkie wczesniejsze operacje nadal dzialaja
+
+Nazwa pliku wynikowego ./main
+
 ## Faza 1
 
 Program poprawnie rysuje scene i drony.

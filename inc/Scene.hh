@@ -81,11 +81,17 @@ class Scene{
         *   \brief Metoda dodajaca usuwajaca
         */
        bool DeleteObject(const unsigned int &number_of_element);
-
+        /*!
+        *   \brief Metoda wyswietlajaca liste obiektow sceny
+        */
        bool ShowList();
-
+        /*!
+        *   \brief Metoda dodajaca pliki do rysowania na scenie
+        */
        void Redraw();
-
+        /*!
+        *   \brief Metoda dodajaca pliki dronow do rysowania na scenie
+        */
        void DrawDrone(std::shared_ptr<Drone> Drone);
     
 };

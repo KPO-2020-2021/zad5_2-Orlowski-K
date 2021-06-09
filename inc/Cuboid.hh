@@ -53,13 +53,16 @@ class Cuboid: public Solid{
         *   \brief Metoda odpowiadajaca za dostep do wektora polozenia
         */
         const Vector3D& Take_Layout() const {return Layout;}; 
-
         /*!
         *   \brief Metoda odpowiadajaca za dostep do orientacji
         */
         double Take_OrientAngle() const {return OrientAngle;};
-
+        /*!
+        *   \brief Metoda wirtualna odpowiadajaca za zwracanie typu klasy
+        */
         virtual const std::string ObjectType() const override {return "Prostopadloscian";};
-
+        /*!
+        *   \brief Metoda wirtualna odpowiadajaca za zwracanie wektora polozenia
+        */
         virtual const Vector3D& Take() const override {return Layout;}
 };

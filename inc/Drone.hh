@@ -121,12 +121,15 @@ class Drone: public SceneObject{
         */
         const Prism& operator [] (unsigned int Ind) const;
 
-
+        /*!
+        *   \brief Metoda wirtualna odpowiadajaca za zwracanie typu klasy
+        */
         virtual const std::string ObjectType() const override {return "Drone";};
 
-
         virtual const std::string& TakeFilename_FinalSolid() const override;
-
+        /*!
+        *   \brief Metoda wirtualna odpowiadajaca za zwracanie wektora polozenia
+        */
         virtual const Vector3D& Take() const override {return Layout;};
 
 };

@@ -40,7 +40,12 @@ void Scene::AddDrone(std::shared_ptr<Drone> NewDrone){
 
 }
 
-
+/*!
+ *   \brief Metoda dodajaca pliki drona do sceny
+ *
+ *   \param [in] Drone - wskaznik na danego dron a
+ *   \retval  Dodanie plikow zadanego drona do rysowania na scenie
+ */
 void Scene::DrawDrone(std::shared_ptr<Drone> Drone){
     std::string Filename;
 
@@ -103,10 +108,16 @@ const std::shared_ptr<Drone> Scene::TakeActiveDrone() const{
 }
 
 
-
+/*!
+ *   \brief Metoda dodajaca wskazniki na obiekty sceny do listy
+ *
+ *   \param [in] Drone - wskaznik na dany obiekt sceny
+ *   \retval  Dodanie obiektow do listy sceny
+ */
 void Scene::AddObject(std::shared_ptr<SceneObject> NewObject){
     Objects.push_back(NewObject);
     std::string Filename;
+    // Dla obiektow typu Drone wywolywana jest specjalna dodatkowa funkcjia z rzutowaniem
     if(NewObject->ObjectType() != "Drone"){
         Filename = NewObject->TakeFilename_FinalSolid();
         Link.DodajNazwePliku( Filename.c_str() );
@@ -117,7 +128,14 @@ void Scene::AddObject(std::shared_ptr<SceneObject> NewObject){
 
 }
 
-
+/*!
+ *   \brief Metoda usuwajaca wskazniki na obiekty sceny z listy
+ *
+ *   \param [in] number_of_element - numer elementu listy liczac od 1 (1 i 2 zabronione jako drony)
+ * 
+ *   \retval true  - udalo sie usunac 
+ *   \retval false - w przeciwnym wypadku 
+ */
 bool Scene::DeleteObject(const unsigned int &number_of_element){
     std::list<std::shared_ptr<SceneObject>>::iterator Iter = Objects.begin();
     if(number_of_element - 1 > Objects.size())
@@ -134,7 +152,12 @@ bool Scene::DeleteObject(const unsigned int &number_of_element){
 }
 
 
-
+/*!
+ *   \brief Metoda wyswietlajaca elementy listy (pomijajac drony) wraz z indeksami do 1
+ * 
+ *   \retval true  - wyswietlono elementy listy 
+ *   \retval false - lista jest pusta (nie liczac dronow) 
+ */
 bool Scene::ShowList() {
     unsigned int index = 0;
 
@@ -152,6 +175,10 @@ bool Scene::ShowList() {
     return true;
 }
 
+
+/*!
+ *   \brief Metoda dodajaca pliki do rysowania na scenie
+ */
 void Scene::Redraw(){
 
     std::string Filename;

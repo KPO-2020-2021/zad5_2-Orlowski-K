@@ -53,18 +53,21 @@ class Solid: public SceneObject{
         const std::string& TakeFilename_TemplateSolid() const { return Filename_TemplateSolid; };
 
         /*!
-        *   \brief Metoda zwracajaca sciezke do pliku z docelowa bryla
+        *   \brief Metoda wirtualna zwracajaca sciezke do pliku z docelowa bryla
         */
         virtual const std::string& TakeFilename_FinalSolid() const override{return Filename_FinalSolid;};
-
 
         /*!
         *   \brief Metoda skalujaca wektor
         */
         Vector3D Scale(const Vector3D& Vertex) const;
-
+        /*!
+        *   \brief Metoda wirtualna odpowiadajaca za zwracanie typu klasy
+        */
         virtual const std::string ObjectType() const override {return "Bryla geometryczna";};
-
+        /*!
+        *   \brief Metoda wirtualna odpowiadajaca za zwracanie wektora skalowania
+        */
         virtual const Vector3D& Take() const override {return scale;};
 
 };

@@ -172,13 +172,10 @@ Vector3D Drone::TransformToParentialCoordinate(const Vector3D& Vertex) const{
 }
 
 
-
 /*!
- *   \brief Metoda zzapisujaca dane globalne drona
- *    Wykorzystuje transformacje lokalne bryl, pozniej
- *    transformacje do ukladu drona i ostatecznie do 
- *    ukladu globalnego. Odpowiada za zmiane oboru
- *    rotorow (animacja obracania podczas lotu).
+ *   \brief Metoda zapisujaca dane globalne gory
+ *    Wykorzystuje prostopadloscian do znieksztalcen
+ *    a nastepnie zapisuje nowe dane do podanego pliku
  *
  *   \retval true  - udalo sie zapisac zmiany do plikow
  *   \retval false - w przeciwnym wypadku 
@@ -407,7 +404,11 @@ double Drone::TakeOrient() const{
 
 
 
-
+/*!
+ *   \brief Metoda zwracajaca nazwe pliku ciala drona
+ *
+ *   \retval Nazwa pliku z docelowym cialem drona
+ */
 const std::string& Drone::TakeFilename_FinalSolid() const{
   return Body.TakeFilename_FinalSolid();
 }

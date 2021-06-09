@@ -61,8 +61,12 @@ class Prism: public Solid{
         *   \brief Metoda odpowiadajaca za dostep do orientacji
         */
         double Take_OrientAngle() const {return OrientAngle;}; 
-
+        /*!
+        *   \brief Metoda wirtualna zwracajaca typ klasy
+        */
         virtual const std::string ObjectType() const override {return "Graniastoslup";};
-
+        /*!
+        *   \brief Metoda wirtualna zwracajaca wektor polozenia
+        */
         virtual const Vector3D& Take() const override {return Layout;};
 };
