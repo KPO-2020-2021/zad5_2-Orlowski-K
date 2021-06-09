@@ -41,11 +41,6 @@ int main() {
     double   x = 0,y = 0;
 
     std::shared_ptr<Drone> FirstDrone(new Drone()), SecondDrone(new Drone());
-    std::shared_ptr<Peak>  FirstPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",{20,20,60},{130,30,0},0) );
-    std::shared_ptr<Peak>  SecondPeak(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",{40,40,50},{35,160,0},0) );
-    std::shared_ptr<Slope> FirstSlope(new Slope(FILE_OBSTACLE,"../datasets/dat/Slope" + std::to_string(++number_of_slopes) + ".dat",{20,80,60},{60,90,0},0) );
-    std::shared_ptr<Plateau> FirstPlateau(new Plateau(FILE_OBSTACLE,"../datasets/dat/Plateau" + std::to_string(++number_of_plateaus) + ".dat",{50,60,15},{105,105,0},0) );
-
     std::vector<Vector3D>                   TracePoints;
     std::vector<std::shared_ptr<Drone>>     Drones;
     std::list<std::shared_ptr<SceneObject>> Objects;
@@ -61,10 +56,10 @@ int main() {
 
     Scene.AddObject(FirstDrone);
     Scene.AddObject(SecondDrone);
-    Scene.AddObject(FirstPeak);
-    Scene.AddObject(SecondPeak);
-    Scene.AddObject(FirstSlope);
-    Scene.AddObject(FirstPlateau);
+    Scene.AddObject(std::shared_ptr<Peak>(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",{20,20,60},{130,30,0},0) ));
+    Scene.AddObject(std::shared_ptr<Peak>(new Peak(FILE_OBSTACLE,"../datasets/dat/Peak" + std::to_string(++number_of_peaks) + ".dat",{40,40,50},{35,160,0},0) ));
+    Scene.AddObject(std::shared_ptr<Slope>(new Slope(FILE_OBSTACLE,"../datasets/dat/Slope" + std::to_string(++number_of_slopes) + ".dat",{20,80,60},{60,90,0},0) ));
+    Scene.AddObject(std::shared_ptr<Plateau>(new Plateau(FILE_OBSTACLE,"../datasets/dat/Plateau" + std::to_string(++number_of_plateaus) + ".dat",{50,60,15},{105,105,0},0) ));
     Scene.Redraw();
 
     Link.ZmienTrybRys(PzG::TR_3D);
